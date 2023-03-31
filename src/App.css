@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+body {
+  margin: 0 auto;
+  font-family: 'Comfortaa', cursive;
+  height: 100vh;
+  padding-left: 12%;
+  padding-right: 12%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-family: 'Raleway', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar-container {
+  height: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  border-bottom: 2px black solid;
+}
+nav {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  width: 100%;
+}
+header {
+  height: 25%;
+}
+.top-nav img {
+  height:15%;
+  width: 15%;
+}
+.top-nav  {
+  display: flex;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 10px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
 }
