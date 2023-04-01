@@ -5,17 +5,12 @@ import {
 } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import CreateUser from './pages/CreateUser';
-import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import MyTrail from './pages/MyTrail';
 
 
 function App() {
   const router = createBrowserRouter([
-    {
-      path: "/login",
-      element: <LoginPage/>,
-    },
     {
       path: "/",
       element: <HomePage/>,

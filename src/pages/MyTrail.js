@@ -1,10 +1,13 @@
 import NavBar from "../components/NavBar";
+import LoginCreateCard from "../components/LoginCreateCard";
+
 function MyTrail(){
     return(
         <div className="container">
             <NavBar/>
             <h1>
-                my trail
+                <LoginCreateCard/>
+
             </h1>
         </div>
     )

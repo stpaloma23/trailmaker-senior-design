@@ -1,8 +1,8 @@
-function Footer(){
+function MyTrailCard(){
     return(
         <footer>
             
         </footer>
     )
 }
-export default Footer;
+export default MyTrailCard;
