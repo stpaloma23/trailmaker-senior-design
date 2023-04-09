@@ -14,7 +14,7 @@ function LoginCreateCard(){
             <div className="login-create-card-create-side">
                 <h2>New Here?</h2>
                 <h2>Start making your own trail!</h2>
-                <button className="goto-create-count-btn">
+                <button className="goto-create-count-btn" href="/create-user">
                     Create An Account!
                 </button>
             </div>
