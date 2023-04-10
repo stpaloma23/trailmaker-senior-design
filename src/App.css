@@ -218,14 +218,15 @@ button {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor:grab;
+  margin-bottom: 20px;
 }
 .task-to-complete  p {
   margin: 0px;
   padding: 10px;
 }
 .task-to-complete:hover {
-  border: 1px solid black;
-  border-radius: 25px;
-  cursor:grab;
-  padding: 10px;
+  background-color: green;
 }
