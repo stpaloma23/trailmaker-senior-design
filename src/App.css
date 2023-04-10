@@ -202,3 +202,30 @@ button {
   width: inherit;
   height: inherit;
 }
+
+.type-of-task{
+  border-radius: 25px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.task-to-complete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+.task-to-complete  p {
+  margin: 0px;
+  padding: 10px;
+}
+.task-to-complete:hover {
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor:grab;
+  padding: 10px;
+}

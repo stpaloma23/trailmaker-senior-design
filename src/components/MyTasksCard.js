@@ -40,8 +40,15 @@ function MyTasksCard() {
             </button>
             {inOpen && (
             <div className="content">
-                <p className="task-to-complete">get game dev done</p>
-                <p className="task-to-complete">get this layout completed</p>
+                <div className="task-to-complete">
+
+                    <p>get game dev done</p>
+                    <p>3/23/2023</p>
+                    <p className="type-of-task">Finance</p>
+                </div>
+                <div className="task-to-complete">
+                    <p>get this layout completed</p>
+                </div>
             </div>
             )}
         </div>
@@ -51,8 +58,12 @@ function MyTasksCard() {
             </button>
             {comOpen && (
             <div className="content">
-                <p className="task-to-complete">get game dev done</p>
-                <p className="task-to-complete">get this layout completed</p>
+                <div className="task-to-complete">
+                    <p>get game dev done</p>
+                </div>
+                <div className="task-to-complete">
+                    <p>get this layout completed</p>
+                </div>
             </div>
             )}
       </div>
