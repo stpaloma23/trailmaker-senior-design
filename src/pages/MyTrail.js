@@ -1,14 +1,16 @@
 import NavBar from "../components/NavBar";
 import LoginCreateCard from "../components/LoginCreateCard";
+import MyTrailCard from "../components/MyTrailCard";
 
-function MyTrail(){
+function MyTrail({isLoggedIn}){
     return(
         <div className="container">
             <NavBar/>
-            <h1>
-                <LoginCreateCard/>
+            <MyTrailCard
+             displayTask={true}
+             />
 
-            </h1>
+
         </div>
     )
 }

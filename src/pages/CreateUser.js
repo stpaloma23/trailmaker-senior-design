@@ -57,10 +57,11 @@ function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn}){
     );
     return(
         <div className="container">
-            <NavBar/>
+            {/* <NavBar/> */}
             <div className="create-account-wrapper">
                 <h1>Create an Account</h1>
                 <div className="create-account-form">
+                    <NavBar/>
                     <CreateUserForm 
                         createUser={createUser}
                     />

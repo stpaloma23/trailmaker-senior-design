@@ -1,7 +1,44 @@
+
+import {useNavigate} from 'react-router-dom';
+import React, { useEffect, useCallback, useState } from "react";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import LoginForm from "./LoginForm";
 
-function LoginCreateCard(){
-    const loginUser = true
+function LoginCreateCard({ isLoggedIn, setIsLoggedIn, setUserInformation }){
+    const navigate = useNavigate();
+    const [errors, setErrors] = useState();
+
+    const navigateToCreatePage = () => {
+        navigate('/create');
+    };
+    
+    useEffect(()=>{
+        if (isLoggedIn) navigate("/my-trail");
+    });
+    const loginUser = useCallback((e) => {
+        e.preventDefault();
+        const email = e.currentTarget.email.value;
+        const password = e.currentTarget.password.value;
+        const auth = getAuth();
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                setIsLoggedIn(true)
+                setUserInformation({
+                    email: user.email,
+                    displayName: user.displayName,
+                    uid: user.uid,
+                    accessToken: user.accessToken,
+                });
+            })
+            .catch((errors) => {
+                const errorCode = errors.code;
+                const errorMessage = errors.message;
+                console.warn({ errors, errorCode, errorMessage})
+                setErrors(errorMessage);
+            }); 
+    }, [setErrors, setIsLoggedIn, setUserInformation])
+
     return(
         <div className="login-create-card-container">
             <div className="login-create-card-login-side">
@@ -14,7 +51,7 @@ function LoginCreateCard(){
             <div className="login-create-card-create-side">
                 <h2>New Here?</h2>
                 <h2>Start making your own trail!</h2>
-                <button className="goto-create-count-btn" href="/create-user">
+                <button className="goto-create-count-btn" onClick={navigateToCreatePage} >
                     Create An Account!
                 </button>
             </div>

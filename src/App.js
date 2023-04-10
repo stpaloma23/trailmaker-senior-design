@@ -11,6 +11,7 @@ import {getAuth, onAuthStateChanged} from "firebase/auth";
 import CreateUser from './pages/CreateUser';
 import HomePage from './pages/HomePage';
 import MyTrail from './pages/MyTrail';
+import NavBar from './components/NavBar';
 
 
 function App() {
@@ -50,7 +51,8 @@ function App() {
     }
   }, [appInitialized]);
 
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
     {
       path: "/",
       element: <HomePage/>,
@@ -67,7 +69,9 @@ function App() {
     {
       path: "/my-trail",
       element:
-        <MyTrail/>,
+        <MyTrail
+          isLoggedIn={isLoggedIn}
+        />,
     },
   ]);
   return (
