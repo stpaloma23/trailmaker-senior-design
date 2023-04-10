@@ -110,6 +110,7 @@ button {
   padding-top: 20px;
   padding-left:20px;
   border-right: 2px black solid;
+  padding-right: 20px;
 }
 .my-trail-header li {
   margin-bottom: 30px;
@@ -117,6 +118,16 @@ button {
   padding:10px;
   font-size: 20px;
 }
+.my-trail-header li:hover {
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor:grab;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
 .my-trail-header h3 {
   font-weight: bold;
   font-size: 25px;
@@ -152,5 +163,42 @@ button {
   margin-right: 30px;
   padding: 10px;
   border: 1px black solid;
-  border-radius: 50%;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.my-trail-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.next-step-section, .completed-step-section {
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow:auto;
+  border-radius:25px;
+  margin-bottom: 30px;;
+}
+.collapse {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 25px;
+  width: inherit;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border:none;
+}
+
+.content {
+  padding: 18px;
+  overflow: hidden;
+  background-color: white;
+  width: inherit;
+  height: inherit;
 }

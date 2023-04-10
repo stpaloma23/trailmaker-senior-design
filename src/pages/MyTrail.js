@@ -7,10 +7,8 @@ function MyTrail({isLoggedIn}){
         <div className="container">
             <NavBar/>
             <MyTrailCard
-             displayTask={true}
+                displayTask={true}
              />
-
-
         </div>
     )
 }
