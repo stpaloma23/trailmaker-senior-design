@@ -12,6 +12,10 @@ import CreateUser from './pages/CreateUser';
 import HomePage from './pages/HomePage';
 import MyTrail from './pages/MyTrail';
 import NavBar from './components/NavBar';
+import FinancesPage from './pages/FinancesPage';
+import ProfessionalPage from './pages/ProfessionalPage';
+import HighSchoolPage from './pages/HighSchoolPage';
+import AcademicPage from './pages/AcademicPage';
 
 
 function App() {
@@ -56,6 +60,22 @@ function App() {
     {
       path: "/",
       element: <HomePage/>,
+    },
+    {
+      path: "/finances-page",
+      element: <FinancesPage/>,
+    },
+    {
+      path: "/professional-development",
+      element: <ProfessionalPage/>,
+    },
+    {
+      path: "/high-school",
+      element: <HighSchoolPage/>,
+    },
+    {
+      path: "/academics",
+      element: <AcademicPage/>,
     },
     {
       path: "/create-user",

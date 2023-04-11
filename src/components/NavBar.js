@@ -7,10 +7,10 @@ function NavBar(){
                     <img src={logo} alt="trailmaker logo"/>
                 </div>
                 <nav>
-                    <a href="/">Pre-College</a>
-                    <a href="/">Finances</a>
-                    <a href="/">Academic</a>
-                    <a href="/">Professional</a>
+                    <a href="/high-school">Pre-College</a>
+                    <a href="/finances-page">Finances</a>
+                    <a href="/academics">Academic</a>
+                    <a href="/professional-development">Professional</a>
                     <a href="/my-trail">My Trail</a>
                     <a href="/">New Post</a>
                 </nav>

@@ -230,3 +230,40 @@ button {
 .task-to-complete:hover {
   background-color: green;
 }
+.small-article-image {
+  height: 200px;
+  width: 100%;
+  background-color: blue;
+}
+.large-image-article {
+  height: 380px;
+  width: 100%;
+  background-color: blueviolet;
+}
+.top-articles-section{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.right-articles {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  width: 35%;
+}
+.left-article {
+  background-color: coral;
+  width: 73%;
+  margin-right: 20px;
+}
+.bottom-article-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.article-layout h1 {
+  font-size: 25px;
+}
+.bottom-section-article {
+  width:30%;
+}

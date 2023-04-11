@@ -11,7 +11,7 @@ function LoginCreateCard({ isLoggedIn, setIsLoggedIn, setUserInformation }){
     const navigateToCreatePage = () => {
         navigate('/create');
     };
-    
+
     useEffect(()=>{
         if (isLoggedIn) navigate("/my-trail");
     });
