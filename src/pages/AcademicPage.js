@@ -1,12 +1,10 @@
-import ArticleLayout from "../components/ArticleLayout";
-import NavBar from "../components/NavBar";
+import ArticleLayout from "../components/article-components/ArticleLayout";
 
 
 function AcademicPage(){
 
     return (
         <div className="container">
-            <NavBar/>
             <ArticleLayout/>
         </div>
     )

@@ -1,10 +1,26 @@
 import logo from "../images/logo.png"
-function NavBar(){
+import { getAuth, signOut } from 'firebase/auth';
+
+
+function NavBar({isLoggedIn, setIsLoggedIn, setUserInformation}){
+    function logout() {
+        const auth = getAuth()
+        signOut(auth)
+            .then(()=>{
+                setUserInformation({})
+                setIsLoggedIn(false)
+            })
+            .catch((error)=>{
+                console.warn(error)
+            })
+    }
     return(
         <header>
             <div className="nav-bar-container">
                 <div className="top-nav">
                     <img src={logo} alt="trailmaker logo"/>
+                    {(isLoggedIn &&<p onClick={()=>logout()}>Logout</p>) || (!isLoggedIn &&<a href="/login">Login</a>)}
+
                 </div>
                 <nav>
                     <a href="/high-school">Pre-College</a>
@@ -19,3 +35,5 @@ function NavBar(){
     )
 }
 export default NavBar;
+
+

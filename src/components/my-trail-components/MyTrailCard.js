@@ -1,10 +1,12 @@
-import MyTrailHeader from "./MyTrailHeader";
+import MyTrailHeader from "../my-trail-components/MyTrailHeader";
 import { useState } from "react";
-import MyGoalsCard from "./MyGoalsCard";
-import MyTasksCard from "./MyTasksCard";
-import MyThoughtsCard from "./MyThoughtsCard";
-import MyCalendarCard from "./MyCalendarCard";
-import MySettingCard from "./MySettingCard";
+import MyGoalsCard from "../my-trail-components/MyGoalsCard";
+import MyTasksCard from "../my-trail-components/MyTasksCard";
+import MyThoughtsCard from "../my-trail-components/MyThoughtsCard";
+import MyCalendarCard from "../my-trail-components/MyCalendarCard";
+import MySettingCard from "../my-trail-components/MySettingCard";
+
+
 function MyTrailCard({displayTask}){
 
     const [selectedSection, setSelectedSection] = useState('tasks');

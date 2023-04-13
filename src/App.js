@@ -16,6 +16,8 @@ import FinancesPage from './pages/FinancesPage';
 import ProfessionalPage from './pages/ProfessionalPage';
 import HighSchoolPage from './pages/HighSchoolPage';
 import AcademicPage from './pages/AcademicPage';
+import Footer from './components/Footer';
+import LoginPage from './pages/LoginPage';
 
 
 function App() {
@@ -84,6 +86,17 @@ function App() {
           isLoggedIn={isLoggedIn}
           setIsLoggedIn={setIsLoggedIn}
           setUserInformation={setUserInformation}
+          app={appInitialized}
+        />,
+    },
+    {
+      path: "/login",
+      element:
+        <LoginPage
+          isLoggedIn={isLoggedIn}
+          setIsLoggedIn={setIsLoggedIn}
+          setUserInformation={setUserInformation}
+          app={appInitialized}
         />,
     },
     {
@@ -96,7 +109,12 @@ function App() {
   ]);
   return (
     <div className="App">
+      <NavBar 
+        isLoggedIn={isLoggedIn}
+        setIsLoggedIn={setIsLoggedIn}
+        setUserInformation={setUserInformation}/>
       <RouterProvider router={router} />
+      <Footer/>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 function MyTrailHeader({selectedSection, setSelectedSection}){
 

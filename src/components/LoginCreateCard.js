@@ -9,7 +9,7 @@ function LoginCreateCard({ isLoggedIn, setIsLoggedIn, setUserInformation }){
     const [errors, setErrors] = useState();
 
     const navigateToCreatePage = () => {
-        navigate('/create');
+        navigate('/create-user');
     };
 
     useEffect(()=>{

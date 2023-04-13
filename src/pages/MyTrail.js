@@ -1,11 +1,14 @@
-import NavBar from "../components/NavBar";
-import LoginCreateCard from "../components/LoginCreateCard";
-import MyTrailCard from "../components/MyTrailCard";
+import { useNavigate } from "react-router-dom";
+import MyTrailCard from "../components/my-trail-components/MyTrailCard";
+
 
 function MyTrail({isLoggedIn}){
+    const navigate = useNavigate();
+    // if (!isLoggedIn) {
+    //     navigate("login")
+    // }
     return(
         <div className="container">
-            <NavBar/>
             <MyTrailCard
                 displayTask={true}
              />

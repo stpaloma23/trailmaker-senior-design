@@ -1,18 +1,25 @@
 import React, { useCallback, useState, useEffect} from "react";
 import { useNavigate }  from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
+import { addDoc, collection, getFirestore, setDoc, doc } from "firebase/firestore";
 
 import CreateUserForm from "../components/CreateUserForm";
-import NavBar from "../components/NavBar";
-function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn}){
+
+function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn, app}){
     const [errors, setErrors] = useState();
     const navigate = useNavigate();
+    var userTasks = {
+        finance:[],
+        professional:[],
+        highschool:[],
+        academic:[]
+    };
     // const navigateToLoginPage = () => {
     //     navigate('/');
     // };
-    useEffect(()=>{
-        if (isLoggedIn) navigate("/my-trail");
-    })
+    // useEffect(()=>{
+    //     if (isLoggedIn) navigate("/my-trail");
+    // })
     const createUser = useCallback (
         (e) => {
             e.preventDefault();
@@ -38,6 +45,14 @@ function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn}){
                                 uid: user.uid,
                                 accessToken: user.accessToken,
                             })
+                            // create a method that calls firestore database and creates a plae to store all the tasks
+                            const db = getFirestore(app);
+                            try {
+                                const docRef = doc(db,"user-tasks",user.uid);
+                                setDoc(docRef,userTasks);
+                            } catch(e) {
+                                    console.error("Error adding document: ", e)
+                            }
                         })
                         .catch((error) => {
                             const errorCode = errors.code;
@@ -53,15 +68,15 @@ function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn}){
                     setErrors(errorMessage);
                 });
         },
-        [setErrors, setIsLoggedIn, setUserInformation, errors]
+        [setErrors, setIsLoggedIn, setUserInformation, errors,app]
     );
+    
+
     return(
         <div className="container">
-            {/* <NavBar/> */}
             <div className="create-account-wrapper">
                 <h1>Create an Account</h1>
                 <div className="create-account-form">
-                    <NavBar/>
                     <CreateUserForm 
                         createUser={createUser}
                     />
