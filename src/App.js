@@ -18,6 +18,7 @@ import HighSchoolPage from './pages/HighSchoolPage';
 import AcademicPage from './pages/AcademicPage';
 import Footer from './components/Footer';
 import LoginPage from './pages/LoginPage';
+import ArticlePage from './pages/ArticlePage';
 
 
 function App() {
@@ -105,6 +106,10 @@ function App() {
         <MyTrail
           isLoggedIn={isLoggedIn}
         />,
+    },
+    {
+      path: "/article/:id", 
+      element: <ArticlePage />,
     },
   ]);
   return (

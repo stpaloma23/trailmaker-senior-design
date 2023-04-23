@@ -1,6 +1,16 @@
-function RightSmallArticleCard() {
+import { useNavigate } from "react-router-dom";
+
+function RightSmallArticleCard({blurb, date, title, imageAlt, imageSrc, id}) {
+    const navigate = useNavigate();
+    // var firstHalf = "/article/";
+    // var secondHalf = toString(id);
+    // let address = firstHalf.concat(secondHalf);
+
+    const navigateToArticle = () => {
+        navigate(`/article/${id}`);
+    };
     return (
-        <div className="right-article-small">
+        <div className="right-article-small" onClick={navigateToArticle}>
             <div className="small-article-image">
 
             </div>

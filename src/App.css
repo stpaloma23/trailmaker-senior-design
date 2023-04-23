@@ -234,7 +234,7 @@ button {
   background-color: green;
 }
 .small-article-image {
-  height: 200px;
+  height: 180px;
   width: 100%;
   background-color: grey;
   border: 1px solid black;
@@ -283,7 +283,7 @@ button {
   border-right: none;
 }
 .article-layout {
-  margin-top: 15px;
+  
 }
 .right-article-small {
   margin-bottom: 15px;
