@@ -1,5 +1,6 @@
 import React, {useMemo} from "react";
 import { useParams } from "react-router";
+import ArticleNextSteps from "../components/ArticleNextSteps";
 import Data from "../images/data";
 
 function ArticlePage(){
@@ -54,6 +55,9 @@ function ArticlePage(){
                         })
                     }
                 </div>
+                <ArticleNextSteps 
+                    nextSteps={articleData.nextSteps}
+                />
             </section>
         </main>
     );

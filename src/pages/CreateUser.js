@@ -8,18 +8,35 @@ import CreateUserForm from "../components/CreateUserForm";
 function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn, app}){
     const [errors, setErrors] = useState();
     const navigate = useNavigate();
-    var userTasks = {
-        finance:[],
-        professional:[],
-        highschool:[],
-        academic:[]
-    };
+
     // const navigateToLoginPage = () => {
     //     navigate('/');
     // };
-    // useEffect(()=>{
-    //     if (isLoggedIn) navigate("/my-trail");
-    // })
+    useEffect(()=>{
+        if (isLoggedIn) navigate("/my-trail");
+    })
+    const createUserTask = useCallback( async (e,uid,db) => {
+        e.preventDefault();
+        console.log(uid);
+        try {
+            var userTasks = {
+                finance:[],
+                professional:[],
+                highschool:[],
+                academic:[],
+                completed:[],
+                allTasks:[],
+            };
+            // const docRef = doc(db,user.uid);
+            // setDoc(docRef,userTasks);
+            // const taskRef = collection(db,`users/${user.uid}`);
+            //const docRef = doc(db,"user-tasks", String(uid));
+            await setDoc(doc(db,"user-tasks", String(uid)), userTasks);
+            console.log(db);
+        } catch(e) {
+            console.error("Error adding document: ", e)
+        }
+    }, []);
     const createUser = useCallback (
         (e) => {
             e.preventDefault();
@@ -45,14 +62,8 @@ function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn, app}){
                                 uid: user.uid,
                                 accessToken: user.accessToken,
                             })
-                            // create a method that calls firestore database and creates a plae to store all the tasks
                             const db = getFirestore(app);
-                            try {
-                                const docRef = doc(db,"user-tasks",user.uid);
-                                setDoc(docRef,userTasks);
-                            } catch(e) {
-                                    console.error("Error adding document: ", e)
-                            }
+                            createUserTask(e, user.uid, db);
                         })
                         .catch((error) => {
                             const errorCode = errors.code;
@@ -68,9 +79,8 @@ function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn, app}){
                     setErrors(errorMessage);
                 });
         },
-        [setErrors, setIsLoggedIn, setUserInformation, errors,app]
+        [setErrors, setIsLoggedIn, setUserInformation, errors,app,createUserTask]
     );
-    
 
     return(
         <div className="container">

@@ -18,6 +18,7 @@ function ArticleLayout(){
                     imageAlt={Data[1].image.alt}
                     imageSrc={Data[1].image.url}
                     id={Data[1].id}
+                    nextSteps={Data[1].nextSteps}
                 />
                 <div className="right-articles">
                     <RightSmallArticleCard
@@ -27,6 +28,7 @@ function ArticleLayout(){
                         imageAlt={Data[2].image.alt}
                         imageSrc={Data[2].image.url}
                         id={Data[2].id}
+                        nextSteps={Data[2].nextSteps}
                     />
                     <RightSmallArticleCard
                         blurb={Data[3].blurb}
@@ -35,6 +37,7 @@ function ArticleLayout(){
                         imageAlt={Data[3].image.alt}
                         imageSrc={Data[3].image.url}
                         id={Data[3].id}
+                        nextSteps={Data[3].nextSteps}
                     />
                 </div>
             </div>
@@ -46,6 +49,7 @@ function ArticleLayout(){
                     imageAlt={Data[3].image.alt}
                     imageSrc={Data[3].image.url}
                     id={Data[3].id}
+                    nextSteps={Data[3].nextSteps}
                 />
                 <SmallArticleCard
                     blurb={Data[3].blurb}
@@ -54,6 +58,7 @@ function ArticleLayout(){
                     imageAlt={Data[3].image.alt}
                     imageSrc={Data[3].image.url}
                     id={Data[3].id}
+                    nextSteps={Data[3].nextSteps}
                 />
                 <SmallArticleCard
                     blurb={Data[3].blurb}
@@ -62,6 +67,7 @@ function ArticleLayout(){
                     imageAlt={Data[3].image.alt}
                     imageSrc={Data[3].image.url}
                     id={Data[3].id}
+                    nextSteps={Data[3].nextSteps}
                 />
             </div>
         </div>

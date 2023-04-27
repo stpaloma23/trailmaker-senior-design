@@ -10,11 +10,12 @@ function RightSmallArticleCard({blurb, date, title, imageAlt, imageSrc, id}) {
         navigate(`/article/${id}`);
     };
     return (
-        <div className="right-article-small" onClick={navigateToArticle}>
+        <div className="right-article-small article-card" onClick={navigateToArticle}>
             <div className="small-article-image">
-
+                <img src={imageSrc} alt={imageAlt} />
             </div>
-            <h1>Lorem Ipsum Dolorum</h1>
+            <h1 className="article-title">{title}</h1>
+            <p>{blurb}</p>
         </div>
     )
 }
