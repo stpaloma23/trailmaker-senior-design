@@ -30,7 +30,8 @@ export default [
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Sep 04 2019 17:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."]
+      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
+      "section":"finance",
     },
     {
       "id": "article-two",
@@ -63,7 +64,8 @@ export default [
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Sep 05 2019 10:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."]
+      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
+      "section":"finance",
     },
     {
       "id": "article-three",
@@ -96,7 +98,8 @@ export default [
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Sep 06 2019 18:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."]
+      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
+      "section":"finance",
     },
     {
       "id": "article-four",
@@ -129,7 +132,8 @@ export default [
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Aug 08 2019 12:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "laboris nisi ut aliquip ex ea commodo consequat."]
+      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "laboris nisi ut aliquip ex ea commodo consequat."],
+      "section":"finance",
     },
     {
       "id": "article-five",
@@ -162,7 +166,8 @@ export default [
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Aug 10 2019 12:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."]
+      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
+      "section":"finance",
     },
     {
       "id": "article-six",
@@ -203,6 +208,7 @@ export default [
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Aug 22 2019 17:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."]
+      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
+      "section":"finance",
     }
   ];

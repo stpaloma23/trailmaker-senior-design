@@ -230,7 +230,7 @@ button {
   padding: 10px;
 }
 .task-to-complete:hover {
-  background-color: green;
+  background-color: rgb(208, 242, 208);
 }
 .small-article-image {
   height: 180px;
@@ -355,4 +355,23 @@ footer {
   border: 1px black solid;
   border-radius:25px  ;
   padding:15px;
+}
+.next-step-other-info{
+  display: flex;
+  flex-direction: row;
+  margin-right:15px;
+}
+.next-step-other-info button {
+  border-radius: 25px;
+  margin-left:15px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.type-of-task {
+  margin-right: 15px;
+}
+.next-step-date {
+  margin-right: 15px;
 }

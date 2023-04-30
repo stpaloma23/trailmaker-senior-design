@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TaskToComplete from "./TaskToComplete";
 
-function ArticleNextSteps({nextSteps, section}){
+function ArticleNextSteps({nextSteps, section, app, userInformation, isLoggedIn}){
     const [inOpen, setIncompleteOpen] = useState(false);
     const incompleteToggle = () => {
         setIncompleteOpen(!inOpen);
@@ -14,7 +14,14 @@ function ArticleNextSteps({nextSteps, section}){
             {inOpen && (
                 <div className="content">
                     {nextSteps.map((step, i) => (
-                        <TaskToComplete key={i} step={step} section={"null"}/>
+                        <TaskToComplete 
+                            key={i} 
+                            step={step} 
+                            section={section}
+                            app={app}
+                            userInformation={userInformation}
+                            isLoggedIn={isLoggedIn}
+                        />
                     ))}
                 </div>
             )}

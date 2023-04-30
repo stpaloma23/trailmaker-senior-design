@@ -1,7 +1,7 @@
 import React, { useCallback, useState, useEffect} from "react";
 import { useNavigate }  from "react-router-dom";
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
-import { addDoc, collection, getFirestore, setDoc, doc } from "firebase/firestore";
+import { getFirestore, setDoc, doc } from "firebase/firestore";
 
 import CreateUserForm from "../components/CreateUserForm";
 
@@ -27,10 +27,6 @@ function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn, app}){
                 completed:[],
                 allTasks:[],
             };
-            // const docRef = doc(db,user.uid);
-            // setDoc(docRef,userTasks);
-            // const taskRef = collection(db,`users/${user.uid}`);
-            //const docRef = doc(db,"user-tasks", String(uid));
             await setDoc(doc(db,"user-tasks", String(uid)), userTasks);
             console.log(db);
         } catch(e) {

@@ -26,6 +26,8 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userInformation, setUserInformation] = useState({});
+  console.log("app",isLoggedIn);
+  
 
   const firebaseConfig = {
     apiKey: "AIzaSyBwDdMlQxYeM0ZnbE9X9SOYfaNLAMWckbo",
@@ -40,7 +42,7 @@ function App() {
   useEffect(() => {
     const app = initializeApp(firebaseConfig);
     setAppInitialized(app)
-  },[])
+  },[]);
 
   useEffect(() => {
     if (appInitialized) {
@@ -109,7 +111,12 @@ function App() {
     },
     {
       path: "/article/:id", 
-      element: <ArticlePage />,
+      element: 
+        <ArticlePage 
+          app={appInitialized}
+          userInformation={userInformation}
+          isLoggedIn={isLoggedIn}
+        />,
     },
   ]);
   return (

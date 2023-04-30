@@ -3,14 +3,15 @@ import { useParams } from "react-router";
 import ArticleNextSteps from "../components/ArticleNextSteps";
 import Data from "../images/data";
 
-function ArticlePage(){
+function ArticlePage({app, userInformation, isLoggedIn}){
     const { id } = useParams(); // hook 
-    console.log(id);
+    console.log("article page",isLoggedIn);
+    // console.log(id);
 
     const articleData = Data.find((article) => (
         article.id === id // finding where the article id in the list is equal to the article id of the specific article
     ))
-    console.log(articleData)
+    // console.log(articleData)
 
     // using usememo from react library 
     const date = useMemo(() => {
@@ -57,6 +58,10 @@ function ArticlePage(){
                 </div>
                 <ArticleNextSteps 
                     nextSteps={articleData.nextSteps}
+                    section={articleData.section}
+                    app={app}
+                    userInformation={userInformation}
+                    isLoggedIn={isLoggedIn}
                 />
             </section>
         </main>
