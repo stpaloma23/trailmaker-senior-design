@@ -2,13 +2,20 @@ import React, {useMemo} from "react";
 import { useParams } from "react-router";
 import ArticleNextSteps from "../components/article-components/ArticleNextSteps";
 import Data from "../images/data";
+import financeData from "../images/data-finance.js";
 
 function ArticlePage({app, userInformation, isLoggedIn}){
     const { id } = useParams(); // hook 
-    console.log("article page",isLoggedIn);
+    console.log(id);
+    const sectionSplit = id.split("-");
+    let data; 
+    if (sectionSplit[0] === "finance") {
+        data = financeData
+    }
+    // console.log("article page",isLoggedIn);
     // console.log(id);
 
-    const articleData = Data.find((article) => (
+    const articleData = data.find((article) => (
         article.id === id // finding where the article id in the list is equal to the article id of the specific article
     ))
     // console.log(articleData)

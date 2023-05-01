@@ -4,7 +4,9 @@ function FinancesPage(){
 
     return (
         <div className="container">
-            <ArticleLayout/>
+            <ArticleLayout
+                section={"finance"}
+            />
         </div>
     )
 }
