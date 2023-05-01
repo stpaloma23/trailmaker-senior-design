@@ -1,6 +1,6 @@
 import { useRef , useCallback, useState} from "react";
-import { getFirestore, getDocs,query, collection, where, doc, getDoc, updateDoc, arrayUnion} from "firebase/firestore";
-function TaskToComplete({key, step,section, app, userInformation, isLoggedIn}){
+import { getFirestore, doc, getDoc, updateDoc, arrayUnion} from "firebase/firestore";
+function ArticleTaskToComplete({step,section, app, userInformation, isLoggedIn}){
     const arStepRef = useRef(null);
 
     const addStepToUserTasks = useCallback(async () => {
@@ -17,7 +17,7 @@ function TaskToComplete({key, step,section, app, userInformation, isLoggedIn}){
                 console.warn("error in task to complete", error);
             }
         }
-    },[isLoggedIn,app,userInformation]);
+    },[isLoggedIn,app,userInformation,section]);
 
     return(
         <div className="task-to-complete">
@@ -32,4 +32,4 @@ function TaskToComplete({key, step,section, app, userInformation, isLoggedIn}){
         </div>
     )
 }
-export default TaskToComplete
+export default ArticleTaskToComplete

@@ -107,6 +107,8 @@ function App() {
       element:
         <MyTrail
           isLoggedIn={isLoggedIn}
+          app={appInitialized}
+          userInformation={userInformation}
         />,
     },
     {

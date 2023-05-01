@@ -7,12 +7,15 @@ import MyCalendarCard from "../my-trail-components/MyCalendarCard";
 import MySettingCard from "../my-trail-components/MySettingCard";
 
 
-function MyTrailCard({displayTask}){
+function MyTrailCard({displayTask, app, userInformation}){
 
     const [selectedSection, setSelectedSection] = useState('tasks');
     let content;
     if (selectedSection === "tasks") {
-        content = <MyTasksCard/>
+        content = <MyTasksCard
+                    app={app}
+                    userInformation={userInformation}
+                />
     }
     if (selectedSection === "goals") {
         content = <MyGoalsCard/>

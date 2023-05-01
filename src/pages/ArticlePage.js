@@ -1,6 +1,6 @@
 import React, {useMemo} from "react";
 import { useParams } from "react-router";
-import ArticleNextSteps from "../components/ArticleNextSteps";
+import ArticleNextSteps from "../components/article-components/ArticleNextSteps";
 import Data from "../images/data";
 
 function ArticlePage({app, userInformation, isLoggedIn}){

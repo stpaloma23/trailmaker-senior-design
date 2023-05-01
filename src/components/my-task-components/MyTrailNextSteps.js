@@ -1,11 +1,12 @@
 import { useState } from "react";
-import TaskToComplete from "./TaskToComplete";
+import TrailTaskToComplete from "./TrailTaskToComplete";
 
-function ArticleNextSteps({nextSteps, section, app, userInformation, isLoggedIn}){
-    const [inOpen, setIncompleteOpen] = useState(false);
+function MyTrailNextSteps({nextSteps, app,uid,section}){
+    const [inOpen, setIncompleteOpen] = useState(true);
     const incompleteToggle = () => {
         setIncompleteOpen(!inOpen);
     };
+    console.log("next steps", nextSteps)
     return(
         <div className="next-step-section">
             <button type="button" className="collapse" onClick={incompleteToggle}>
@@ -13,14 +14,13 @@ function ArticleNextSteps({nextSteps, section, app, userInformation, isLoggedIn}
             </button>
             {inOpen && (
                 <div className="content">
-                    {nextSteps.map((step, i) => (
-                        <TaskToComplete 
+                    {nextSteps?.map((step, i) => (
+                        <TrailTaskToComplete 
                             key={i} 
-                            step={step} 
-                            section={section}
+                            task={step}
                             app={app}
-                            userInformation={userInformation}
-                            isLoggedIn={isLoggedIn}
+                            uid={uid}
+                            section={section}
                         />
                     ))}
                 </div>
@@ -28,4 +28,4 @@ function ArticleNextSteps({nextSteps, section, app, userInformation, isLoggedIn}
         </div>
     )
 }
-export default ArticleNextSteps;
+export default MyTrailNextSteps

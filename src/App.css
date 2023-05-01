@@ -106,7 +106,6 @@ button {
   align-items: center;
 }
 .my-trail-header{
-  height: 100%;
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -160,8 +159,9 @@ button {
   flex-direction: row;
   width: 100%;
   font-size: 20px;
+  margin-bottom:15px;
 }
-.task-filers h4 {
+.task-filers button {
   margin-right: 30px;
   padding: 10px;
   border: 1px black solid;
@@ -374,4 +374,11 @@ footer {
 }
 .next-step-date {
   margin-right: 15px;
+}
+.trail-task-button img {
+  background-size: cover;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+
 }
