@@ -11,7 +11,6 @@ function MyTasksCard({app, userInformation}) {
     const completeToggle = () => {
         setCompleteOpen(!comOpen);
     };
-    const completedList = ["completed 1 ", "completed 2", "completed 3"];
     const uid = userInformation.uid;
     const [section, setSection] = useState("all");
     useEffect( () => {

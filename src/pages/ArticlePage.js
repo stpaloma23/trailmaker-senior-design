@@ -26,6 +26,7 @@ function ArticlePage({app, userInformation, isLoggedIn}){
         const parsedDate = new Date(articleData.publishedDate);
         return parsedDate.toDateString();
     }, [articleData]);
+    // <p className="article-blurb">{articleData.blurb}</p>
 
     return (
         <main className="article-page-wrapper">
@@ -37,12 +38,11 @@ function ArticlePage({app, userInformation, isLoggedIn}){
                     backgroundSize: "cover"
                 }}
             >
-                <div className="article-page-header-text">
+            </header>
+            <div className="article-page-header-text">
                     <h1>{articleData.title}</h1>
                     <h2 className="article-date">{date}</h2>
-                    <p className="article-blurb">{articleData.blurb}</p>
-                </div>
-            </header>
+            </div>
             <section className="article-contents">
                 <div className="article-contents-wrapper">
                     {

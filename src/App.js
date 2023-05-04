@@ -64,7 +64,12 @@ function App() {
     [
     {
       path: "/",
-      element: <HomePage/>,
+      element: 
+        <HomePage
+          app={appInitialized}
+          userInformation={userInformation}
+          isLoggedIn={isLoggedIn}
+        />,
     },
     {
       path: "/finances-page",
