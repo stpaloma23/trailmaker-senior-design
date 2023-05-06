@@ -27,7 +27,6 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userInformation, setUserInformation] = useState({});
   console.log("app",isLoggedIn);
-  
 
   const firebaseConfig = {
     apiKey: "AIzaSyBwDdMlQxYeM0ZnbE9X9SOYfaNLAMWckbo",

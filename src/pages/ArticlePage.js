@@ -57,6 +57,8 @@ function ArticlePage({app, userInformation, isLoggedIn}){
                                     return <h3 key={i}>{text.data}</h3>;     
                                 case "h4":
                                     return <h4 key={i}>{text.data}</h4>;   
+                                case "ul":
+                                    return <ul key={i}>{text.data}</ul>;  
                                 default:
                                     return <p key={i}>{text.data}</p>;
                             };

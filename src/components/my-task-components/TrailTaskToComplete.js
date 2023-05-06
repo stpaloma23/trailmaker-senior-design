@@ -2,7 +2,8 @@ import { useRef, useCallback } from "react";
 import { getFirestore, doc, getDoc, updateDoc, arrayUnion, arrayRemove} from "firebase/firestore";
 import check from "../../images/check.png"
 
-function TrailTaskToComplete({ task, app, uid, section}){
+function TrailTaskToComplete({ task, app, uid, section, displayDate}){
+    console.log("in this bitch hoe");
     const trStepRef = useRef(null);
     const userTaskCompleted = useCallback(async () => {
         // when the button is pressed, it removes the  task from the sections and adds it to the completed section
@@ -24,7 +25,7 @@ function TrailTaskToComplete({ task, app, uid, section}){
                 <p id="article-step" ref={trStepRef}>{task}</p>
             </div>
             <div className="next-step-other-info">
-                <p className="next-step-date">3/23/2023</p>
+                {displayDate && <p className="next-step-date">3/23/2023</p> }
                 <div className="add-next-step trail-task-button" onClick={userTaskCompleted}> <img src={check} alt="check icon"/> </div>
             </div>
         </div>

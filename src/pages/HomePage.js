@@ -7,12 +7,12 @@ import TrailTaskToComplete from "../components/my-task-components/TrailTaskToCom
 function HomePage({app, userInformation, isLoggedIn}){
     const uid = userInformation.uid;
     const [data, setData] = useState([]);
+    console.log("data",data);
     useEffect( () => {
         if (isLoggedIn) {
-            // console.log("in this bitch");
             const fetchDoc = async () => {
                 try{
-                    // console.log("in the try block")
+                    console.log("in the try block");
                     const db = getFirestore(app);
                     const docRef = doc(db,"user-tasks",String(uid));
                     const tasks = await getDoc(docRef);
@@ -37,12 +37,13 @@ function HomePage({app, userInformation, isLoggedIn}){
                     <div className="home-page-bottom-article">
                         <SmallArticleCard/>
                         <SmallArticleCard/>
+                        <SmallArticleCard/>
                     </div>
                 </div>
                 <div className="home-page-next-steps">
                     <h1> Next Steps</h1>
                     <div className="home-page-next-steps-display">
-                        {isLoggedIn && data.length > 0 &&
+                        {isLoggedIn  && data.all && data.all.length &&
                             data.all.map((task, i) => (
                                 <TrailTaskToComplete 
                                     key={i} 
@@ -50,6 +51,7 @@ function HomePage({app, userInformation, isLoggedIn}){
                                     app={app}
                                     uid={uid}
                                     section={""}
+                                    displayDate={false}
                                 />
                             ))
                         }

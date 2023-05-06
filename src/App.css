@@ -401,3 +401,7 @@ footer {
 .home-page-next-steps {
   width: 30%;
 }
+.home-page-next-steps-display{
+  display: flex;
+  flex-direction: column;
+}
