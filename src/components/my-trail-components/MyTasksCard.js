@@ -42,19 +42,20 @@ function MyTasksCard({app, userInformation}) {
         <div className="my-trail-card">
             <h1>My Tasks</h1>
             <div className="task-filers">
-                <button onClick={SecSelected("all")}>All</button>
-                <button onClick={SecSelected("finance")}>Finance</button>
-                <button onClick={SecSelected("academic")}>Academic</button>
-                <button onClick={SecSelected("personal")}>Personal</button>
-                <button onClick={SecSelected("professional")}>Professional</button>
+                <button className="my-task-menus-buttons" onClick={SecSelected("all")}>All</button>
+                <button className="my-task-menus-buttons" onClick={SecSelected("finance")}>Finance</button>
+                <button className="my-task-menus-buttons" onClick={SecSelected("academic")}>Academic</button>
+                {/* <button className="my-task-menus-buttons" onClick={SecSelected("personal")}>Personal</button> */}
+                <button className="my-task-menus-buttons" onClick={SecSelected("career")}>Career</button>
+                <button className="my-task-menus-buttons" onClick={SecSelected("completed")}>Completed</button>
             </div>
             <MyTrailNextSteps
                 nextSteps={data?.[section]}
                 app={app}
                 uid={uid}
-                sectionSelected={section}
+                section={section}
             />
-            <div className="completed-step-section">
+            {/* <div className="completed-step-section">
                 <button type="button" className="collapse" onClick={completeToggle}>
                 Completed Steps
                 </button>
@@ -71,7 +72,7 @@ function MyTasksCard({app, userInformation}) {
                     )}
                 </div>
                 )}
-        </div>
+        </div> */}
         </div>
     );
 }

@@ -5,7 +5,9 @@ function AcademicPage(){
 
     return (
         <div className="container">
-            <ArticleLayout/>
+            <ArticleLayout
+                section={"academic"}
+            />
         </div>
     )
 }

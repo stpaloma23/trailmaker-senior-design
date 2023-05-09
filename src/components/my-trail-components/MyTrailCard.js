@@ -37,6 +37,7 @@ function MyTrailCard({displayTask, app, userInformation}){
                     <MyTrailHeader
                         selectedSection={selectedSection}
                         setSelectedSection={setSelectedSection}
+                        userInformation={userInformation}
                     />
                     <div className="my-trail-contents-container">
                         {content}

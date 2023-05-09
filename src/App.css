@@ -88,6 +88,7 @@ a {
 button {
   font-family: 'Comfortaa', cursive;
   padding: 20px;
+  cursor: pointer;
 }
 .login-create-card-container h2{
   font-size: 22px;
@@ -142,8 +143,8 @@ button {
   flex-direction: row;
 }
 .pfp-circle {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   background-color: grey;
   border-radius: 50%;
 }
@@ -404,4 +405,23 @@ footer {
 .home-page-next-steps-display{
   display: flex;
   flex-direction: column;
+}
+.pink {
+  background-color: rgb(240, 137, 154);
+}
+.blue {
+  background-color: rgb(9, 148, 255);
+}
+.green {
+  background-color: rgb(63, 242, 182);
+}
+.purple{
+  background-color: rgb(154, 29, 161);
+}
+.yellow {
+  background-color: rgb(251, 251, 41);
+}
+.black{
+  background-color: black;
+  color:white;
 }

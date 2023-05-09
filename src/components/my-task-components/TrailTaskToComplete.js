@@ -18,6 +18,25 @@ function TrailTaskToComplete({ task, app, uid, section, displayDate}){
                 console.warn("error in task to complete", error);
             }
     },[section, app, uid]);
+    let color;
+    if (section === "all") {
+        color = "purple";
+    }
+    if (section === "career") {
+        color = "blue";
+    }
+    if (section === "academic") {
+        color = "yellow";
+    }
+    if (section === "highschool") {
+        color = "pink";
+    }
+    if (section === "finance") {
+        color = "green";
+    }
+    if (section === "completed") {
+        color = "black";
+    }
 
     return (
         <div className="task-to-complete">
@@ -26,6 +45,7 @@ function TrailTaskToComplete({ task, app, uid, section, displayDate}){
             </div>
             <div className="next-step-other-info">
                 {displayDate && <p className="next-step-date">3/23/2023</p> }
+                <div className={`next-step-section ${color}`}><p>{section}</p></div>
                 <div className="add-next-step trail-task-button" onClick={userTaskCompleted}> <img src={check} alt="check icon"/> </div>
             </div>
         </div>

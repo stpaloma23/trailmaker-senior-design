@@ -4,7 +4,9 @@ function ProfessionalPage(){
 
     return (
         <div className="container">
-            <ArticleLayout/>
+            <ArticleLayout 
+                section={"career"}
+            />
         </div>
     )
 }

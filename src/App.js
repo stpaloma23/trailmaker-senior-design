@@ -71,15 +71,15 @@ function App() {
         />,
     },
     {
-      path: "/finances-page",
+      path: "/finances",
       element: <FinancesPage/>,
     },
     {
-      path: "/professional-development",
+      path: "/career",
       element: <ProfessionalPage/>,
     },
     {
-      path: "/high-school",
+      path: "/highschool",
       element: <HighSchoolPage/>,
     },
     {

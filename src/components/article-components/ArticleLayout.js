@@ -1,6 +1,9 @@
 
 import Data from "../../images/data.js";
 import financeData from "../../images/data-finance.js";
+import careerData from "../../images/data-professional.js";
+import highschoolData from "../../images/data-highschool.js";
+import academicData from "../../images/data-academic.js";
 
 import { useState } from "react";
 import LargeArticleCard from "./LargeArticleCard";
@@ -9,9 +12,20 @@ import SmallArticleCard from "./SmallArticleCard";
 
 function ArticleLayout({section}){
     // const [data, setData]= useState(Data);
+    console.log("article layout",section);
+    
     let data;
     if (section === "finance") {
         data = financeData;
+    }
+    if (section === "career") {
+        data = careerData;
+    }
+    if (section === "academic") {
+        data = academicData;
+    }
+    if (section === "highschool") {
+        data = highschoolData;
     }
     console.log(data)
 

@@ -1,14 +1,17 @@
+import profilePic from "../../images/pfp.png"; 
 
-function MyTrailHeader({selectedSection, setSelectedSection}){
+function MyTrailHeader({selectedSection, setSelectedSection, userInformation}){
 
     const handleNavClick = (section) => {
         setSelectedSection(section);
     }
+    console.log(userInformation)
 
     return(
         <div className="my-trail-header">
-            <div className="pfp-circle"></div>
-            <h3>Hey [Name]</h3>
+            <div className="pfp-circle" style={{  backgroundImage: "url(" + profilePic + ")", backgroundPosition: "center",
+                    backgroundSize: "cover"}} ></div>
+            <h3>Hey {userInformation.displayName} </h3>
             <ul>
                 <li className="trail-sidebar-content" onClick={() => handleNavClick('tasks')}>My Tasks</li>
                 <li className="trail-sidebar-content" onClick={() => handleNavClick('goals')}>My Goals</li>

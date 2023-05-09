@@ -168,7 +168,7 @@ export default [
       "id": "finance-two",
       "title": "Affording college: How to pay for college",
       "website":"https://www.self.inc/info/how-to-pay-for-college/",
-      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "blurb": "Heres a break down about the different ways you can afford college.",
       "articleText": [
         {
           "type": "p",
@@ -356,7 +356,8 @@ export default [
     {
       "id": "finance-three",
       "title": "Paying for College as a First-Generation Student",
-      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "blurb": "Paying for college is overwhelming, especially if youre first gen, here are some reources to help you out",
+      "website":"https://www.collegiateparent.com/money/paying-for-college-as-a-first-generation-student/",
       "articleText": [
         {
           "type": "p",
@@ -390,7 +391,7 @@ export default [
     {
       "id": "finance-four",
       "title": "THE ULTIMATE FIRST GENERATION SCHOLARSHIP LIST ",
-      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "blurb": "Heres a list of scholarships geared towars first generation college students.",
       "website":"https://thescholarshipsystem.com/blog-for-students-families/the-ultimate-first-generation-scholarship-list/",
       "articleText": [
         {
@@ -579,43 +580,103 @@ export default [
     {
       "id": "finance-six",
       "title": "First generation scholarships: everything you need to know ",
-      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "blurb": "Are you the first in your family to go to college? Congrats! Learn how first generation scholarships can help you pay for school.",
       "articleText": [
         {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-          "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "data": "A first-generation student is any student who is the first in their family to attend college or earn a 4-year college degree. For many first-gen students, attending college is a huge source of pride—and a pathway toward greater opportunities in life. Unfortunately, it can also be tough to navigate all the steps required to research, apply for, and pay for college. First-gen students are largely on their own to navigate the complexities of financial aid, scholarships, and college itself. And in some cases, these unfair barriers can lead to worse education outcomes for first-generation students. \n\n A 2021 Pell Institute report found that low-income and first-generation students had a 21% chance of completing a bachelor’s degree. Students who weren’t low-income or first-generation had a much higher (66%) chance. While barriers to success are often high, first-gen students have one distinct advantage: access to first-generation scholarships!"
         },
         {
           "type": "h2",
-          "data": "A Header in the middle of your article"
+          "data": "What are first-generation scholarships?          "
         },
         {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "data": "First-generation scholarships are scholarships offered specifically to students whose parents didn’t attend college (or didn’t graduate with a 4-year degree). They may also be called “first-in-family” scholarships or first gen scholarships. If you’re a first-generation student, you’ll likely qualify for many of these scholarships—but you'll need to apply. You can apply for any scholarships that you’re eligible for. If you’re awarded one, the funds are usually sent directly to your school to help cover the cost of tuition. Scholarships are free money for college or university that usually doesn’t need to be paid back (unlike student loans, which must be paid back). These scholarships are offered by schools themselves, government agencies, nonprofit organizations, private businesses, foundations, and more. These funds can help ease the burdens that first-gen students face. Plus, these scholarships help to improve the diversity of a school, which benefits students and faculty alike! If you feel intimidated by being the first in your family to attend college, know that you’re not alone. According to recent data from the National Association of Student Personnel Administrators (NASPA), around 1/3 of all college students are considered first generation. Let’s look at more details of who qualifies for these juicy scholarships.          "
         },
         {
-          "type": "h3",
-          "data": "A Sub-Header in the middle of your article"
-        },
-        {
-          "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "type": "h2",
+          "data": "Who qualifies for first-in-family scholarships?           "
         },
         {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
+          "data": "Students may qualify for these types of scholarships if they’re considered “first-generation” students. However, the definition of “first generation” varies a bit depending on the school. According to a NASPA survey of college administrators, the most common definition was students from households where 'neither parent or guardian earned a 4-year college degree.' So for most schools and scholarships, you’ll be considered first generation as long as neither of your parents (or guardians) graduated with a bachelor’s degree or higher. However, some scholarships are more restrictive. Some schools or organizations reserve these types of scholarships for students whose parents didn’t attend college at all—regardless of whether or not they earned a degree.         "
+        },
+        {
+          "type": "h2",
+          "data": "How to find first generation scholarships           "
+        },
+        {
+          "type": "p",
+          "data": "Okay, so you qualify—now how do you go about actually finding this free money? Here’s the lowdown:"
+        },
+        {
+          "type": "p",
+          "data": "1. File the FAFSA (this is a prerequisite for many scholarships)          "
+        },
+        {
+          "type": "p",
+          "data": "2. Talk to your school’s financial aid department          "
+        },
+        {
+          "type": "p",
+          "data": "3. Use online resources to find additional opportunities"
+        },
+        {
+          "type": "p",
+          "data": "First things first, you’ll need to file the FAFSA. FAFSA stands for Free Application for Federal Student Aid. Which is a mouthful—hence the 'FAFSA' nickname. You’ll need to do this first because it’s often a requirement to start applying for scholarships and other financial support. You’ll need to do this first because it’s often a requirement to start applying for scholarships and other financial support. The FAFSA can be a confusing beast for first-timers, but don’t worry—Mos can help. Mos pairs you with a financial aid pro to avoid common FAFSA mistakes, match with top scholarships, and fill out those applications. Once you’ve filed the FAFSA, your next stop should be your school’s financial aid department. They can help you find scholarship opportunities, including first gen scholarships. "
+        },
+        {
+          "type": "p",
+          "data": "Plus, many schools directly offer first gen scholarships—meaning that the school itself is offering the money for these scholarships. Ask your school for a list of any scholarships that you may qualify for, and make it clear that you’re a first-generation student. But don’t box yourself in by only looking for first-gen scholarships! You may qualify for a broad range of scholarship opportunities, regardless of your first gen status. For instance, you may qualify for a merit scholarship based on your academic excellence or athletic performance. And you may qualify for federal grants based on your income."
+        },
+        {
+          "type": "h2",
+          "data": "How to increase your odds of landing a first generation scholarship"
+        },
+        {
+          "type": "p",
+          "data": "Finding a college scholarship is just the first step. Next, you’ll need to apply—and hopefully, get approved for—a variety of scholarships. Here are some general tips to help you out."
+        },
+        {
+          "type": "ul",
+          "data": "It’s a numbers game. Apply for a variety of scholarship opportunities to maximize your odds of getting enough to fund your education."
+          },
+          {
+          "type": "ul",
+          "data": "Make it clear that you’re first-gen. Be very clear in your application that you’re a qualifying first-generation college student so that you won’t be eliminated from consideration."
+          },
+          {
+          "type": "ul",
+          "data": "Take time on the essays and questions. Many scholarship applications ask students to answer questions or even write essays explaining why they deserve the scholarship. This is your opportunity to set yourself apart from the competition, so take your time!"
+          },
+          {
+          "type": "ul",
+          "data": "Keep applying every year. Scholarships are available for college students throughout the course of their education, not just in the first academic year."
+          },
+          {
+          "type": "ul",
+          "data": "Keep an eye on deadlines. Each scholarship opportunity will have its own application deadline. Make a list of all the opportunities you plan to apply for, along with their respective due dates."
+          },
+          {
+          "type": "ul",
+          "data": "Don’t ignore small scholarships. We have a tendency to see that $5,000 scholarship and jump for it—while overlooking a variety of $500 scholarships. But the reality is that the smaller dollar amounts add up, and these smaller scholarships usually have fewer applicants."
+          },
+          {
+          "type": "ul",
+          "data": "Include a letter of recommendation. If possible, include a letter of recommendation in your scholarship application. This could be from a teacher, counselor, coach, or employer."
+          },
+          {
+          "type": "ul",
+          "data": "Keep an eye out for scams. Scholarship scams? Yep. Unfortunately, this is yet another area of life where we have to watch out for scams and phishing attempts. To avoid them, stick to reputable scholarship search resources. And if any “opportunity” asks you to pay an application fee—that’s a scam!"
+          },          
       ],
       "image": {
         "url": "https://www.mos.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fh1t3y2jud9xn%2F1qQXyzee6fkA2pPoJ4vFy0%2F7815b4c172ada6b381107d7e761d643d%2FFirst_Generation_Scholarships.png&w=3840&q=75",
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Aug 22 2019 17:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
+      "nextSteps":["Spend 30 minutes everyday looking for scholarships", "Fill out and sign FAFSA ", "Contact the financial aid office about scholarships for first gen students", "Find a trusted teacher to review your scholarship essays"],
       "section":"finance",
     }
   ];

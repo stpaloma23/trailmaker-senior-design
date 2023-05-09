@@ -19,16 +19,17 @@ function NavBar({isLoggedIn, setIsLoggedIn, setUserInformation}){
             <div className="nav-bar-container">
                 <div className="top-nav">
                     <img src={logo} alt="trailmaker logo"/>
-                    {(isLoggedIn &&<p onClick={()=>logout()}>Logout</p>) || (!isLoggedIn &&<a href="/login">Login</a>)}
+                    
 
                 </div>
                 <nav>
-                    <a href="/high-school">Pre-College</a>
-                    <a href="/finances-page">Finances</a>
+                    <a href="/highschool">High School</a>
+                    <a href="/finances">Finances</a>
                     <a href="/academics">Academic</a>
-                    <a href="/professional-development">Professional</a>
+                    <a href="/career">Career</a>
                     <a href="/my-trail">My Trail</a>
                     <a href="/">New Post</a>
+                    {(isLoggedIn &&<a href="" onClick={()=>logout()}>Logout</a>) || (!isLoggedIn &&<a href="/login">Login</a>)}
                 </nav>
             </div>
         </header>

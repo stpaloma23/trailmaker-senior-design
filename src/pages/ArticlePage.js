@@ -3,6 +3,9 @@ import { useParams } from "react-router";
 import ArticleNextSteps from "../components/article-components/ArticleNextSteps";
 import Data from "../images/data";
 import financeData from "../images/data-finance.js";
+import careerData from "../images/data-professional.js";
+import academicData from "../images/data-academic";
+import highschoolData from "../images/data-highschool";
 
 function ArticlePage({app, userInformation, isLoggedIn}){
     const { id } = useParams(); // hook 
@@ -12,8 +15,17 @@ function ArticlePage({app, userInformation, isLoggedIn}){
     if (sectionSplit[0] === "finance") {
         data = financeData
     }
+    if (sectionSplit[0] === "career") {
+        data = careerData
+    }
+    if (sectionSplit[0] === "highschool") {
+        data = highschoolData
+    }
+    if (sectionSplit[0] === "academic") {
+        data = academicData
+    }
     // console.log("article page",isLoggedIn);
-    // console.log(id);
+    console.log("article page section split value",sectionSplit[0]);
 
     const articleData = data.find((article) => (
         article.id === id // finding where the article id in the list is equal to the article id of the specific article

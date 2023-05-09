@@ -1,6 +1,6 @@
 export default [
     {
-      "id": "article-one",
+      "id": "academic-one",
       "title": "Article One: First Fake Article",
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "articleText": [
@@ -31,10 +31,10 @@ export default [
       },
       "publishedDate": "Wed Sep 04 2019 17:04:38 GMT-0400",
       "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
-      "section":"finance",
+      "section":"academic",
     },
     {
-      "id": "article-two",
+      "id": "academic-two",
       "title": "Article Two: Another Fake Article",
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "articleText": [
@@ -65,10 +65,10 @@ export default [
       },
       "publishedDate": "Wed Sep 05 2019 10:04:38 GMT-0400",
       "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
-      "section":"finance",
+      "section":"academic",
     },
     {
-      "id": "article-three",
+      "id": "academic-three",
       "title": "Making Another Article Here",
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "articleText": [
@@ -99,10 +99,10 @@ export default [
       },
       "publishedDate": "Wed Sep 06 2019 18:04:38 GMT-0400",
       "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
-      "section":"finance",
+      "section":"academic",
     },
     {
-      "id": "article-four",
+      "id": "academic-four",
       "title": "Sample Article: Another Article",
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "articleText": [
@@ -133,10 +133,10 @@ export default [
       },
       "publishedDate": "Wed Aug 08 2019 12:04:38 GMT-0400",
       "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "laboris nisi ut aliquip ex ea commodo consequat."],
-      "section":"finance",
+      "section":"academic",
     },
     {
-      "id": "article-five",
+      "id": "academic-five",
       "title": "Wow! A Fifth Article Already",
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "articleText": [
@@ -167,10 +167,10 @@ export default [
       },
       "publishedDate": "Wed Aug 10 2019 12:04:38 GMT-0400",
       "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
-      "section":"finance",
+      "section":"academic",
     },
     {
-      "id": "article-six",
+      "id": "academic-six",
       "title": "The Last Article: A Very Cool Fake Article",
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "articleText": [
@@ -209,6 +209,6 @@ export default [
       },
       "publishedDate": "Wed Aug 22 2019 17:04:38 GMT-0400",
       "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
-      "section":"finance",
+      "section":"academic",
     }
   ];

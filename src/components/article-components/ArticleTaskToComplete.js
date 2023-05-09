@@ -4,6 +4,10 @@ function ArticleTaskToComplete({step,section, app, userInformation, isLoggedIn})
     const arStepRef = useRef(null);
     const [disabled, setDisabled] = useState(false);
 
+    const [buttonText, setButtonText] = useState("add"); //same as creating your state variable where "Next" is the default value for buttonText and setButtonText is the setter function for your state variable instead of setState
+
+    const changeText = () => setButtonText("✔️");
+
 
     const addStepToUserTasks = useCallback(async () => {
         if (isLoggedIn) {
@@ -15,12 +19,33 @@ function ArticleTaskToComplete({step,section, app, userInformation, isLoggedIn})
                 updateDoc(docRef, {[section]:arrayUnion(String(stepText)), all:arrayUnion(String(stepText))});;
                 const tasks = await getDoc(docRef);
                 setDisabled(true);
+                changeText();
                 console.log(tasks.data());
             } catch (error) {
                 console.warn("error in task to complete", error);
             }
         }
     },[isLoggedIn,app,userInformation,section]);
+
+    let color;
+    if (section === "all") {
+        color = "purple";
+    }
+    if (section === "career") {
+        color = "blue";
+    }
+    if (section === "academic") {
+        color = "yellow";
+    }
+    if (section === "highschool") {
+        color = "pink";
+    }
+    if (section === "finance") {
+        color = "green";
+    }
+    if (section === "completed") {
+        color = "black";
+    }
 
     return(
         <div className="task-to-complete">
@@ -29,8 +54,8 @@ function ArticleTaskToComplete({step,section, app, userInformation, isLoggedIn})
             </div>
             <div className="next-step-other-info">
                 <p className="next-step-date">3/23/2023</p>
-                <p className="type-of-task">{section}</p>
-                <button className="add-next-step" disabled={disabled} onClick={addStepToUserTasks}> add</button>
+                <p className={`type-of-task ${color}`}>{section}</p>
+                <button className="add-next-step" disabled={disabled} onClick={addStepToUserTasks}> {buttonText}</button>
             </div>
         </div>
     )

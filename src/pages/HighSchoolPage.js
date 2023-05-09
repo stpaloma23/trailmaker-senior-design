@@ -5,7 +5,9 @@ function HighSchoolPage(){
 
     return (
         <div className="container">
-            <ArticleLayout/>
+            <ArticleLayout
+                section={"highschool"}
+            />
         </div>
     )
 }

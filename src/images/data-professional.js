@@ -2,7 +2,7 @@ export default [
     {
       "id": "career-one",
       "title": "Top 5 Career Tips for First Generation College Students",
-      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "blurb": "Being first gen and starting your career is not easy, here are 5 steps to help you navigate the process.",
       "website": "https://career.missouri.edu/top-5-career-tips-for-first-generation-college-students/",
       "articleText": [
         {
@@ -263,112 +263,305 @@ export default [
     },
     {
       "id": "career-four",
-      "title": "Sample Article: Another Article",
-      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "articleText": [
-        {
-          "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "How To Write a College Student Cover Letter",
+      "blurb": "Writing a cover lettter is a crucial step to standing out in the college, here are some steps to get you started",
+      "website": "https://www.indeed.com/career-advice/resumes-cover-letters/college-student-cover-letter",
+      "articleText": [  
+        {    
+          "type": "p",    
+          "data": "A college student cover letter is the first determinant for hiring managers when deciding whether your resume will be viewed or not. If you’re a recent graduate or college student applying for a job, it’s beneficial to know what you should include in a cover letter to increase your chances of standing out."  
+        },  
+        {    
+          "type": "p",    
+          "data": "In this article, we’ll explain how to write a compelling college student cover letter, complete with a template and examples for reference."  
+        },  
+        {   
+           "type": "h2",   
+           "data": "What is a college student cover letter?"  
+        },  
+        {    
+          "type": "p",    
+          "data": "A college student cover letter is a document that accompanies your resume when you apply for a position. It is the first impression you will give to your future employer. The objective of the cover letter is to demonstrate that you could be an asset to the company. It describes how your skills and academic background will allow you to perform successfully."  
+        },  
+        {    
+          "type": "p",    
+          "data": "A college student cover letter can include your GPA if it is higher than 3.5 and mention honor societies you belong to. You may mention your interpersonal skills as qualities that will help you in your future position."  
+        },  
+        {    
+          "type": "h2",    "data": "How to write a college student cover letter"  
+        },  
+        {    
+          "type": "p",    
+          "data": "You can follow these steps to write your college student cover letter:" 
+         },  
+         {
+          "type": "h2",
+          "data": "Do some research"
         },
         {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "data": "Start by finding out what the employer is looking for. Read the job description carefully to identify the qualities the employer wants in a candidate. Among your set of skills, write down the ones that are relevant for the position. Look for information about their company culture or objectives and draft a few sentences explaining why these qualities will help you to thrive in their organization."
         },
         {
           "type": "h2",
-          "data": "A Header in the middle of your article"
+          "data": "Verify the instructions"
         },
         {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "data": "Check if your cover letter needs to be submitted via traditional mail, email or through online application fields. Following the employer's instructions is an easy way to demonstrate your attention to detail. Verify the job description and company website. If you need clarifications, you can call the company's human resources department."
+        },
+        {
+          "type": "h2",
+          "data": "Communicate your contact details"
         },
         {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
-      ],
+          "data": "At the top of the letter, write your first and last name, mailing address, phone number and email. This will facilitate the hiring manager's task when they decide to contact you."
+        },
+        {
+          "type": "h2",
+          "data": "Confirm the recipient's contact information"
+        },
+        {
+          "type": "p",
+          "data": "If you are sending a paper copy, you need to write the recipient's name and address at the top of your letter to ensure they receive it. If you send it electronically, you can skip this step and verify the recipient's email address is correct by double-checking the job posting."
+        },
+        {
+          "type": "h2",
+          "data": "Create a subject line"
+        },
+        {
+          "type": "p",
+          "data": "To ensure that your reader understands the purpose of your letter immediately, explain it in a few words."
+        }, 
+        {    "type": "h2",    "data": "Introduce yourself"  },  
+        {    "type": "p",    "data": "Use your opening statement to introduce yourself. The first paragraph should state the reason why you are writing and where you found out about the position. Also, express your interest in the position sincerely."  },  
+        {    "type": "h2",    "data": "Tell the reader about your education"  },  
+        {    "type": "p",    "data": "Since you are a student or recently graduated, your education is your principal asset. Highlight this at the beginning of your letter. Tell your future employer what you study along with where and when you are expected to graduate if it applies. You can also mention your academic distinctions to make a good first impression."  },  
+        {    "type": "h2",    "data": "Explain why you are a good fit for the job"  },  
+        {    "type": "p",    "data": "In two paragraphs, explain why your skills and education make you a good match for the position. If you already gained relevant experience through internships or summer jobs, mention it."  },  
+        {    "type": "h2",    "data": "Include a call to action"  },  
+        {    "type": "p",    "data": "Finish your letter by asking for an interview and directing the reader to your resume or portfolio. You can also be proactive and express your intention of following up with a call or email to schedule an interview."  },  
+        {    "type": "h2",    "data": "Show gratitude"  },  
+        {    "type": "p",    "data": "Conclude your letter by expressing your gratitude for their time and consideration. Sign the letter in a professional manner."  }
+      ],    
       "image": {
-        "url": "https://via.placeholder.com/2000x1200",
+        "url": "https://cdn.enhancv.com/General_Cover_Letter_623f741c6c.jpeg",
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Aug 08 2019 12:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "laboris nisi ut aliquip ex ea commodo consequat."],
-      "section":"finance",
+      "nextSteps":["Read job descriptions and get key words for cover letter", "Create a template cover letter "],
+      "section":"career",
     },
     {
       "id": "career-five",
-      "title": "Wow! A Fifth Article Already",
-      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "title": "How to Get a Summer Internship in College ",
+      "blurb": "Internships are a great way to gain real world experiences in a career that interests you.",
+      "website":"https://www.usnews.com/education/best-colleges/articles/how-to-get-a-summer-internship-in-college",
       "articleText": [
         {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
+          "data": "When Maria Wilson joined WGGB-TV in Massachusetts as a multimedia journalist in September 2022, colleagues kept asking about where she'd worked previously. However, she had graduated from Endicott College in Massachusetts just months earlier."
+          },
+          {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
-          "type": "h2",
-          "data": "A Header in the middle of your article"
-        },
-        {
+          "data": "'Everybody thought I had already had a real job before, and it was really just because of all that experience from my internships,' she says."
+          },
+          {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
+          "data": "The benefits of doing internships in college are plentiful, experts say."
+          },
+          {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
+          "data": "'Internships allow students to gain valuable work experience that employers expect in today's job market for entry-level hiring while providing students an opportunity to network, explore career paths, sharpen their skills, and receive financial compensation throughout college,' Jeremy Fisher, director of the John P. Fahey Career Center at Creighton University in Nebraska, wrote in an email."
+          },
+          {
+          "type": "p",
+          "data": "While in college, Wilson completed summer internships with the nonprofit LexMedia, The Pappas Post website and Fox News, plus a fall internship with WCVB-TV in Boston as a senior. She says the experiences complemented her digital studies major, helped her determine what kind of work she wanted to pursue after college and honed skills she's using in her current job."
+          },
+          {
+          "type": "p",
+          "data": "Internships can lead to job opportunities. DHL Supply Chain, which has nearly 50,000 employees in North America, offered full-time positions to 86% of its 2022 summer cohort of 272 interns, says Dave Ames, the company's vice president of talent management and acquisition and certified learning and development."
+          },
+          {
+          "type": "p",
+          "data": "'Those who have interned with us are more productive more quickly, generally speaking, than those who haven't,' Ames says. "
+          },
+          {
+            "type": "p",
+            "data": "With summer approaching, college students across the U.S. are searching for internship opportunities. Here are five tips for college students looking to get a summer internship and the benefits that accompany it:"
+          },
+          {
+            "type": "h2",
+            "data": "Connect With College Career Centers"
+          },
+          { "type": "p",
+            "data":"Most college campuses feature a career center, which is designed to help students advance toward professional careers. One step for many college students is gaining internship experience.\n\n'I think that career advisers can help students really explore what all the options are that might be aligned with their major and their interests,'says Dale McLennan, dean of the internship and career center at Endicott.\n\nCareer centers typically offer guidance throughout the internship application process.\n\n'If you're a student and you're looking for an internship, you want to make sure you have a great resume and you want to make sure you know how to reach out to a site professionally,' McLennan says. 'Career advisers and career centers should be able to help with that.'\n\nStudents can also consult careers centers to learn more about the internship financial assistance opportunities available at their school. Endicott students who accept internships away from home can apply for travel stipends, McLennan says. Many colleges even offer stipends or scholarships to compensate students for the work they do as unpaid interns."
+          },
+          {
+            "type": "h2",
+            "data": "Get Creative With Your Resume"
+          },
+          { "type":"p",
+            "data":"College students entering the internship process for the first time, including freshmen, don't need to fret. While some companies hiring interns may consider only students with prior internship experience, many take interest in applicants who developed applicable skills elsewhere.\n\nStudents hoping to land a summer internship for the first time can spotlight different kinds of experiences on their resumes, Fisher says.\n\n'High school students and early college students without prior internship experience can boost their resumes by highlighting relevant work experience, skills, leadership, and other extracurricular involvement,' he says. 'The best advice is to customize and tailor your resume to show you have most of the skills and qualifications that the employer is looking for and that can come through classes, projects, employment, activities, community service and more.'"
+          },
+          {
+            "type":"p",
+            "data":"Getting into the internship game sooner rather than later can greatly benefit students, experts say."
+            },
+            {
+            "type":"p",
+            "data":"'Internships help tremendously with figuring out your true passion and exploring career paths, which is essential for students early in their college years,' Fisher says."
+            },
+            {
+            "type":"h2",
+            "data":"Look for Campus Opportunities"
+            },
+            {
+            "type":"p",
+            "data":"While students tend to search for summer internships off campus, potential opportunities on campus should not be overlooked."
+            },
+            {
+            "type":"p",
+            "data":"'If you think of universities as a large employer, there are departments such as Operations, Marketing, IT, Human Resources, Finance, Performing Arts, Libraries, Development/Fundraising, Legal Counsel, Events Management/Catering, and many others that hire students for internships and on-campus employment,' Fisher says."
+            },
+            {
+            "type":"p",
+            "data":"Some employers visit college campuses in search of interns. Students can stand out to employers by attending these events and interacting face-to-face with company representatives, Ames says."
+            },
+            {
+            "type":"p",
+            "data":"'Don't just apply,' he says. 'While we live in a world where everything seems to be going more virtual than not, most organizations still have a presence at colleges and universities across the United States. If we're visiting your school, it's because we believe in you. These aren't employers that are just going everywhere.'"
+            },
+            {
+            "type":"h2",
+            "data":"Consider Remote Options"
+            },
+            {
+            "type":"p",
+            "data":"Remote work, a growing trend, has boomed in popularity since the onset of the coronavirus pandemic in 2020. As a result, away-from-the-office internships have become increasingly common."
+            },
+            {
+            "type":"p",
+            "data":"For example, only 4.6% of the sales internships posted to job search site Indeed in 2019 mentioned remote or at-home work, according to a 2021 study conducted by the company. That jumped to 18.3% in 2020, per the study."
+            },
+            {
+              "type":"p",
+              "data":"While restraints on in-person gatherings have eased since 2020, remote work has remained common. As a result, a wider range of internship opportunities is available for college students, McLennan says."
+              },
+              {
+              "type":"p",
+              "data":"'That really opens up some opportunities for students who didn't think they could do an internship, or live in places where there's not a lot of opportunities geographically close,'McLennan"
+              },
+              {
+              "type":"p",
+              "data":"Many remote internships are unpaid, but students looking specifically for paid opportunities do not need to rule out remote positions entirely. A University of Wisconsin-Madison multi-site case study analyzing internship participation during the pandemic found that 58% of the observed students who completed a remote internship were paid."
+              },
+              {
+                "type": "h2",
+                "data": "Tap Into Personal Networks"
+                },
+                {
+                "type": "p",
+                "data": "College students who have few professional contacts in their respective fields may know people from other life ventures that could help them find internships, McLennan says."
+                },
+                {
+                "type": "p",
+                "data": "'I always feel like students don't realize they have a network,' she says. 'They always think, 'Oh, I don't really know anybody, I'm just a student.' But they have parents, and their parents' friends, and their neighbors and their former coaches and teachers, and I think if they really think about who they know, those are some people that can really open some doors.'"
+                },
+                {
+                "type": "p",
+                "data": "Students unable to leverage personal connections can find willing helpers in their everyday lives, even in coffee shop lines, McLennan says."
+                },
+                {
+                "type": "p",
+                "data": "'There's some value (for students) in telling anyone they know that they're looking for an internship,' she says. 'You'd be really surprised at how many people, even complete strangers, not just family members, are so willing to help.'"
+                }
       ],
       "image": {
-        "url": "https://via.placeholder.com/2000x1200",
+        "url": "https://www.internshipfinder.com/wp-content/uploads/2016/08/internship-home-page-dp589x335.jpg",
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Aug 10 2019 12:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
-      "section":"finance",
+      "nextSteps":["Reach out to your schooll's alumni network about internships", "Search for remote internships", "Reach out to your school's career center ", "Include extra curriculars and class projects on resume","laboris nisi ut aliquip ex ea commodo consequat."],
+      "section":"career",
     },
     {
       "id": "career-six",
-      "title": "The Last Article: A Very Cool Fake Article",
-      "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "title": "How to Optimize Your LinkedIn Profile",
+      "blurb": "As you  get ready to dive into the post-grad job search, encourage them to pay a little extra attention to your LinkedIn profile!.",
+      "website":"https://www.collegiateparent.com/career-prep/optimize-your-linkedin-profile/",
       "articleText": [
         {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
+          "data": "As your student gets ready to dive into the post-grad job search, encourage them to pay a little extra attention to their LinkedIn profile!"
+          },
+          {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
+          "data": "LinkedIn is an excellent way to build their network and keep themselves in the loop for the best career opportunities, but it can also be challenging."
+          },
+          {
+          "type": "p",
+          "data": "Here are some of our favorite tips for optimizing your LinkedIn profile to help you get your resume and profile in front of future employers."
+          },
+          {
           "type": "h2",
-          "data": "A Header in the middle of your article"
-        },
-        {
-          "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
+          "data": "Building Out Your LinkedIn Profile"
+          },
+          {
           "type": "h3",
-          "data": "A Sub-Header in the middle of your article"
-        },
-        {
+          "data": "Visual Appeals"
+          },
+          {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        },
-        {
+          "data": "You are seven times more likely to be found if you have a profile picture on your LinkedIn. And for better or worse, we judge a book by its cover; your LinkedIn profile picture is an important first impression that may help you get your foot in the door and land an interview."
+          },
+          {
           "type": "p",
-          "data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        }
+          "data": "Make sure you have a recent headshot of you wearing what you would ideally like to wear to work. Headshots that feature your face (a close-up where your face takes center focus) will help your profile stand out, as full body shots make it more difficult for recruiters to see you (remember, the profile picture displays aren’t especially large on LinkedIn)."
+          },
+          {
+          "type": "p",
+          "data": "Next, upload a background image for your profile as well. This adds visual appeal to your profile, making it memorable to potential employers. It can also serve as another way for you to show what interests you."
+          },   
+          {
+            "type": "h3",
+            "data": "Headlines and Summaries"
+          },
+          {"type":"p",
+          "data":"These will serve as your first opportunities to introduce yourself and your professional interests, so make sure to spend some time thinking about what you’d like to say. Your headline can be much more than simply your job description — and it should be! Don’t just tell recruiters what you’re currently doing; add descriptive words to tell them more than just your job title (i.e. “Growth-Minded Manager” or “User Experience Oriented Creative”). \n\nCollege students who aren’t currently employed can use this space to share their career aspirations or even what they’re currently studying or interested in (i.e. “studying marketing analytics at UCLA” or “Future Innovation Driven Entrepreneur”)."
+            },
+            {
+            "type": "p",
+            "data": "Use your summary to introduce yourself, your professional background and your personal interests in five or so sentences. If you’re not one for stringent academic writing, don’t write your summary that way! Take this opportunity to showcase your personality while telling your story. \n\nIf you want to include your favorite joke or something about your pets or personal life, add it in at the end as something to help you stand out without stealing focus from your professional attributes."
+            },
+            {
+            "type": "p",
+            "data": "Remember that the more time you spend building out your profile, the more information you'll provide to potential employers. LinkedIn is constantly coming out with new features for profiles, so checking in periodically to keep your profile up to date will help keep you visible!"
+            },
+            {
+            "type": "h2",
+            "data": "Interacting with Your Network"
+          },
+            {
+              "type":"p",
+            "data":"LinkedIn, though used primarily in a professional capacity, is still a social networking site. You make yourself easier to find when you interact with other people’s posts and you can even create a few posts yourself. \n\nDon’t shy away from commenting on posts from people you don’t know either! You may open the door to new connections or expose your profile to somebody else’s network. You can also spend some time following companies that you’re interested in to see what they’re sharing in case you ever find yourself interviewing for a position there."
+            },
+            {
+            "type": "p",
+            "data": "If you’re looking to create a few posts yourself, make sure you share things that are relevant to the industry that you’re trying to attract attention from — LinkedIn’s algorithm prioritizes relevancy. \n\nThat also means that LinkedIn tailors your feed for your professional interests, making it a great resource for you! If you’re looking for ways to grow within your industry and become a more competitive job candidate, make sure you spend some time browsing through your LinkedIn feed to see what other people in your industry are doing."
+            },
+            {
+            "type": "p",
+            "data": "Keep in mind that, at the end of the day, LinkedIn is just one tool and it's not the end all be all platform for finding a job. While it is one of the primary things employers will look at in addition to resumes, ensure your student keeps their options open when starting the job search! \n\nPreparing for the 'freshman year of life' right now, or navigating it as a new graduate, is especially challenging, so make sure to check in with your student or grad often and offer your encouragement whenever you can!"
+            },
       ],
       "image": {
-        "url": "https://via.placeholder.com/2000x1200",
+        "url": "https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://www.collegiateparent.com/wp-content/uploads/2020/12/how-to-optimize-your-linkedin.png",
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Aug 22 2019 17:04:38 GMT-0400",
-      "nextSteps":["Lorem ipsum dolor sit amet", "consectetur adipiscing elit, sed do eiusmod tempor incididunt ", "onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", "magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco","laboris nisi ut aliquip ex ea commodo consequat."],
-      "section":"finance",
+      "nextSteps":["Take an updated professional headshot", "Write a summary for my profile", "Add descriptive words to your linkedin headline", "Make posts about your school work and professional work","Interact and comment on your networks posts"],
+      "section":"career",
     }
   ];
