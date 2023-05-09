@@ -184,7 +184,6 @@ button {
   padding: 10px;
   overflow:auto;
   border-radius:25px;
-  margin-bottom: 30px;;
 }
 .collapse {
   background-color: white;
@@ -417,6 +416,7 @@ footer {
 }
 .purple{
   background-color: rgb(154, 29, 161);
+  color:white;
 }
 .yellow {
   background-color: rgb(251, 251, 41);
@@ -424,4 +424,16 @@ footer {
 .black{
   background-color: black;
   color:white;
+}
+.article-contents-wrapper {
+  line-height: 2;
+}
+.article-contents-wrapper h2 {
+  line-height: 1;
+}
+.article-contents-wrapper h3 {
+  line-height: 1;
+}
+.next-step-text {
+  
 }

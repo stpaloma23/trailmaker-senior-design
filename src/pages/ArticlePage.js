@@ -70,7 +70,7 @@ function ArticlePage({app, userInformation, isLoggedIn}){
                                 case "h4":
                                     return <h4 key={i}>{text.data}</h4>;   
                                 case "ul":
-                                    return <ul key={i}>{text.data}</ul>;  
+                                    return <li key={i}>{text.data}</li>;  
                                 default:
                                     return <p key={i}>{text.data}</p>;
                             };

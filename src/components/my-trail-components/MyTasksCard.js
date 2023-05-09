@@ -42,12 +42,13 @@ function MyTasksCard({app, userInformation}) {
         <div className="my-trail-card">
             <h1>My Tasks</h1>
             <div className="task-filers">
-                <button className="my-task-menus-buttons" onClick={SecSelected("all")}>All</button>
-                <button className="my-task-menus-buttons" onClick={SecSelected("finance")}>Finance</button>
-                <button className="my-task-menus-buttons" onClick={SecSelected("academic")}>Academic</button>
+                <button className="my-task-menus-buttons purple" onClick={SecSelected("all")}>All</button>
+                <button className="my-task-menus-buttons green" onClick={SecSelected("finance")}>Finance</button>
+                <button className="my-task-menus-buttons yellow" onClick={SecSelected("academic")}>Academic</button>
                 {/* <button className="my-task-menus-buttons" onClick={SecSelected("personal")}>Personal</button> */}
-                <button className="my-task-menus-buttons" onClick={SecSelected("career")}>Career</button>
-                <button className="my-task-menus-buttons" onClick={SecSelected("completed")}>Completed</button>
+                <button className="my-task-menus-buttons blue" onClick={SecSelected("career")}>Career</button>
+                <button className="my-task-menus-buttons pink" onClick={SecSelected("highschool")}>High School</button>
+                <button className="my-task-menus-buttons black" onClick={SecSelected("completed")}>Completed</button>
             </div>
             <MyTrailNextSteps
                 nextSteps={data?.[section]}

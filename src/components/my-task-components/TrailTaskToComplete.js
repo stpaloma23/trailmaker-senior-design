@@ -45,7 +45,7 @@ function TrailTaskToComplete({ task, app, uid, section, displayDate}){
             </div>
             <div className="next-step-other-info">
                 {displayDate && <p className="next-step-date">3/23/2023</p> }
-                <div className={`next-step-section ${color}`}><p>{section}</p></div>
+                {section && <div className={`next-step-section ${color}`}><p>{section}</p></div>}
                 <div className="add-next-step trail-task-button" onClick={userTaskCompleted}> <img src={check} alt="check icon"/> </div>
             </div>
         </div>

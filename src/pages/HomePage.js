@@ -50,7 +50,6 @@ function HomePage({app, userInformation, isLoggedIn}){
                                     task={task} 
                                     app={app}
                                     uid={uid}
-                                    section={""}
                                     displayDate={false}
                                 />
                             ))
