@@ -6,6 +6,8 @@ import financeData from "../images/data-finance.js";
 import careerData from "../images/data-professional.js";
 import academicData from "../images/data-academic";
 import highschoolData from "../images/data-highschool";
+import welcomePic from "../images/welcome.png";
+import palomaPic from "../images/paloma.png";
 
 function ArticlePage({app, userInformation, isLoggedIn}){
     const { id } = useParams(); // hook 
@@ -24,6 +26,10 @@ function ArticlePage({app, userInformation, isLoggedIn}){
     if (sectionSplit[0] === "academic") {
         data = academicData
     }
+    if (sectionSplit[0] === "article") {
+        data = Data;
+    }
+    
     // console.log("article page",isLoggedIn);
     console.log("article page section split value",sectionSplit[0]);
 
@@ -38,6 +44,15 @@ function ArticlePage({app, userInformation, isLoggedIn}){
         const parsedDate = new Date(articleData.publishedDate);
         return parsedDate.toDateString();
     }, [articleData]);
+
+    let headerPhoto;
+    if (id === "article-one") {
+        headerPhoto = welcomePic;
+    } else if  (id === "article-one") {
+        headerPhoto = palomaPic;
+    } else {
+        headerPhoto = articleData.image.url;
+    }
     // <p className="article-blurb">{articleData.blurb}</p>
 
     return (
@@ -45,7 +60,7 @@ function ArticlePage({app, userInformation, isLoggedIn}){
             <header 
                 className="article-header" 
                 style={{
-                    backgroundImage: `url(${articleData.image.url})`,
+                    backgroundImage: `url(${headerPhoto})`,
                     backgroundPosition: "center",
                     backgroundSize: "cover"
                 }}

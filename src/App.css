@@ -257,9 +257,7 @@ button {
   width: 35%;
 }
 .left-article {
-  margin-right: 15px;
   padding-right: 15px;
-  border-right: 1px black solid;
 }
 .bottom-article-section {
   display: flex;
@@ -434,6 +432,9 @@ footer {
 .article-contents-wrapper h3 {
   line-height: 1;
 }
-.next-step-text {
-  
+.home-page-articles h1{
+  font-size:20px;
+}
+.home-page-articles {
+  margin-right:25px;
 }

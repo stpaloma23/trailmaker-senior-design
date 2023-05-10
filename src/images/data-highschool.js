@@ -131,11 +131,11 @@ export default [
         },
       ],
       "image": {
-        "url": "https://via.placeholder.com/2000x1200",
+        "url": "https://dhsthebuzz.org/wp-content/uploads/2022/04/app.png",
         "alt": "A placeholder image"
       },
       "publishedDate": "Wed Sep 04 2019 17:04:38 GMT-0400",
-      "nextSteps":["Ask your guidance concelor about the AP classes offered at your school","make a list of AP classes that interest you", ""],
+      "nextSteps":["Ask your guidance concelor about the AP classes offered at your school","make a list of AP classes that interest you", "Request a reduce fee for AP exams"],
       "section":"highschool",
     },
     {
