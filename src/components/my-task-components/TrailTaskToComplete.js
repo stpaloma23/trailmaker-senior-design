@@ -1,4 +1,4 @@
-import { useRef, useCallback } from "react";
+import { useRef, useCallback, useState } from "react";
 import { getFirestore, doc, getDoc, updateDoc, arrayUnion, arrayRemove} from "firebase/firestore";
 import check from "../../images/check.png"
 
@@ -14,6 +14,7 @@ function TrailTaskToComplete({ task, app, uid, section, displayDate}){
                 updateDoc(docRef, {[section]:arrayRemove(String(userTask)), all:arrayRemove(String(userTask)), completed:arrayUnion(String(userTask))});;
                 const tasks = await getDoc(docRef);
                 console.log(tasks);
+
             } catch (error) {
                 console.warn("error in task to complete", error);
             }
@@ -39,16 +40,18 @@ function TrailTaskToComplete({ task, app, uid, section, displayDate}){
     }
 
     return (
-        <div className="task-to-complete">
-            <div className="next-step-text">
-                <p id="article-step" ref={trStepRef}>{task}</p>
+        
+            <div className="task-to-complete">
+                <div className="next-step-text">
+                    <p id="article-step" ref={trStepRef}>{task}</p>
+                </div>
+                <div className="next-step-other-info">
+                    {displayDate && <p className="next-step-date">3/23/2023</p> }
+                    {section && <div className={`next-step-section ${color}`}><p>{section}</p></div>}
+                    <div className="add-next-step trail-task-button" onClick={userTaskCompleted}> <img src={check} alt="check icon"/> </div>
+                </div>
             </div>
-            <div className="next-step-other-info">
-                {displayDate && <p className="next-step-date">3/23/2023</p> }
-                {section && <div className={`next-step-section ${color}`}><p>{section}</p></div>}
-                <div className="add-next-step trail-task-button" onClick={userTaskCompleted}> <img src={check} alt="check icon"/> </div>
-            </div>
-        </div>
+        
     )
 }
 export default TrailTaskToComplete;

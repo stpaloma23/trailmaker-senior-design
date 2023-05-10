@@ -47,24 +47,30 @@ function HomePage({app, userInformation, isLoggedIn}){
                         />
                     </div>
                     <div className="home-page-bottom-article">
-                        <RightSmallArticleCard
-                            blurb={welcomeData[1].blurb} 
-                            date={welcomeData[1].publishedDate} 
-                            title={welcomeData[1].title} 
-                            imageAlt={welcomeData[1].image.alt}
-                            imageSrc={palomaPic}
-                            id={welcomeData[1].id}
-                            nextSteps={welcomeData[1].nextSteps}
-                        />
-                        <RightSmallArticleCard
-                            blurb={welcomeData[2].blurb} 
-                            date={welcomeData[2].publishedDate} 
-                            title={welcomeData[2].title} 
-                            imageAlt={welcomeData[2].image.alt}
-                            imageSrc={welcomeData[2].image.url}
-                            id={welcomeData[2].id}
-                            nextSteps={welcomeData[2].nextSteps}
-                        />
+                        <div className="home-page-bottom-article-cards">
+                            <RightSmallArticleCard
+                                blurb={welcomeData[1].blurb} 
+                                date={welcomeData[1].publishedDate} 
+                                title={welcomeData[1].title} 
+                                imageAlt={welcomeData[1].image.alt}
+                                imageSrc={palomaPic}
+                                id={welcomeData[1].id}
+                                nextSteps={welcomeData[1].nextSteps}
+                            />
+                        </div>
+                        <div className="home-page-bottom-article-cards">
+                            <RightSmallArticleCard
+                                blurb={welcomeData[2].blurb} 
+                                date={welcomeData[2].publishedDate} 
+                                title={welcomeData[2].title} 
+                                imageAlt={welcomeData[2].image.alt}
+                                imageSrc={welcomeData[2].image.url}
+                                id={welcomeData[2].id}
+                                nextSteps={welcomeData[2].nextSteps}
+                            />
+                        </div>
+                        
+                        
                     </div>
                 </div>
                 <div className="home-page-next-steps">

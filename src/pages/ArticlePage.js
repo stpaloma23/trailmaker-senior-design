@@ -48,7 +48,8 @@ function ArticlePage({app, userInformation, isLoggedIn}){
     let headerPhoto;
     if (id === "article-one") {
         headerPhoto = welcomePic;
-    } else if  (id === "article-one") {
+    } else if  (id === "article-two") {
+        console.log("in paloma")
         headerPhoto = palomaPic;
     } else {
         headerPhoto = articleData.image.url;
@@ -68,7 +69,7 @@ function ArticlePage({app, userInformation, isLoggedIn}){
             </header>
             <div className="article-page-header-text">
                     <h1>{articleData.title}</h1>
-                    <h2 className="article-date">{date}</h2>
+                    {/* <h2 className="article-date">{date}</h2> */}
             </div>
             <section className="article-contents">
                 <div className="article-contents-wrapper">

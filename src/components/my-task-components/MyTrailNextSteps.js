@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TrailTaskToComplete from "./TrailTaskToComplete";
 
 function MyTrailNextSteps({nextSteps, app,uid,section}){
     const [inOpen, setIncompleteOpen] = useState(true);
+    const [steps, setSteps] = useState(nextSteps);
+    useEffect(() => {
+        // Update the steps state variable whenever there is a change in the nextSteps array
+        setSteps(nextSteps);
+    }, [nextSteps]);
     const incompleteToggle = () => {
         setIncompleteOpen(!inOpen);
     };
@@ -14,7 +19,7 @@ function MyTrailNextSteps({nextSteps, app,uid,section}){
             </button>
             {inOpen && (
                 <div className="content">
-                    {nextSteps?.map((step, i) => (
+                    {steps?.map((step, i) => (
                         <TrailTaskToComplete 
                             key={i} 
                             task={step}

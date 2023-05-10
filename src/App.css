@@ -29,8 +29,8 @@ header {
   height: 25%;
 }
 .top-nav img {
-  height:17%;
-  width: 17%;
+  height:20%;
+  width: 20%;
 }
 .top-nav  {
   display: flex;
@@ -39,6 +39,7 @@ header {
   border-bottom: 1px rgb(167, 160, 160) solid;
   padding: 6px;
   flex-direction: row;
+  text-align: center;
 }
 .top-nav a {
   align-self: flex-end;
@@ -270,7 +271,6 @@ button {
   font-weight: bold;
 }
 .bottom-section-article {
-  width:31.59%;
   padding-right: 15px;
   border-right: 1px solid black;
 }
@@ -303,11 +303,11 @@ footer {
 }
 .article-card{
   padding: 5px;
+  border:1px white solid;
 }
 .article-card:hover{
   cursor: pointer;
   border:1px black solid;
-  padding:5px;
 }
 .article-header {
   height:400px;
@@ -395,6 +395,9 @@ footer {
 .home-page-bottom-article {
   display: flex;
   flex-direction: row;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid black;
 }
 .home-page-next-steps {
   width: 30%;
@@ -436,7 +439,9 @@ footer {
   font-size:20px;
 }
 .home-page-articles {
-  margin-right:25px;
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: solid black;
 }
 .calendar-card-container {
   height: 100%;
@@ -566,4 +571,32 @@ footer {
 
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
+}
+.article-layout-bottom-small-article{
+  width:100%;
+}
+.article-layout-left-article {
+  margin-right:15px;
+  border-right: 1px solid black;
+  padding-right: 15px;
+}
+.article-layout-right-article-card:first-of-type{
+  border-bottom: 1px solid black;
+}
+.article-layout-right-article-card:last-of-type {
+  margin-top: 15px;
+}
+.article-layout-bottom-small-article{
+  margin-right: 8px;
+  border-right: black solid 1px;
+  padding-right:15px;
+}
+.article-layout-bottom-small-article:last-of-type{
+  margin-right: 0px;
+  border-right: 0px;
+}
+.home-page-bottom-article-cards:first-of-type{
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid black;
 }
