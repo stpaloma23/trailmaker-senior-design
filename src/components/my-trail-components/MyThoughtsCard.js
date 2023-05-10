@@ -1,10 +1,11 @@
 import ThoughtsCard from "../ThoughtsCard";
 import plus from "../../images/plus.png"
 import Modal from 'react-modal';
-import { useState, useCallback, useRef } from "react";
-import { getFirestore, doc, getDoc, addDoc, arrayUnion, setDoc} from "firebase/firestore";
+import { useState, useCallback, useRef, useEffect } from "react";
+import { getFirestore, doc, getDoc, addDoc, arrayUnion, setDoc, getDocs} from "firebase/firestore";
 function MyThoughtsCard({app, userInformation, isLoggedIn}) {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [userThoughts, setUserThoughts] = useState([]);
     const customStyles = {
         content: {
           top: '50%',
@@ -29,15 +30,35 @@ function MyThoughtsCard({app, userInformation, isLoggedIn}) {
                 console.log(postTitle, postContent);
                 const db = getFirestore(app);
                 const docRef = doc(db,"user-thoughts",String(uid));
-                await setDoc(docRef, {[postTitle]:[postContent]});
-                // const tasks = await getDoc(docRef);
+                await setDoc(docRef, {[postTitle]:[postContent]} , { merge: true });
                 setModalIsOpen(false)
                 // console.log(tasks.data());
             } catch(e) {
-                console.error("Error adding document: ", e)
+                console.error("Error adding document in thoughts card: ", e)
             }
         }
     }, [app, userInformation, isLoggedIn]);
+
+    useEffect( () =>{
+        const fetchThoughts = async () => {
+            try {
+                console.log("in fetch thoughts ")
+                const uid = userInformation.uid;
+                const db = getFirestore(app);
+                const docRef = doc(db,"user-thoughts",String(uid));
+                const thoughts = await getDoc(docRef);
+                setUserThoughts(Object.values(thoughts.data()));
+                console.log("thoughts",thoughts.data());
+            } catch (error) {
+                console.warn("error in thoughts card", error);
+            }
+        }
+        fetchThoughts();
+    },[app,userInformation]);
+
+    console.log("userthoghts outside" , userThoughts);
+    
+
 
     return (
         <div className="my-trail-card">
@@ -57,6 +78,13 @@ function MyThoughtsCard({app, userInformation, isLoggedIn}) {
                         <button onClick={uploadThought}>Post</button>
                     </div>
                 </Modal>
+                {
+                    userThoughts.map((thought, i) => {
+                        <ThoughtsCard
+                            title={thought[0]} key={i}/>
+
+                    })
+                }
                 <ThoughtsCard/>
                 <ThoughtsCard/>
                 <ThoughtsCard/>
@@ -65,3 +93,9 @@ function MyThoughtsCard({app, userInformation, isLoggedIn}) {
     )
 }
 export default MyThoughtsCard;
+
+/*
+Object.entries(userThoughts).map(([title,content])=>{
+                        <ThoughtsCard 
+                            title={title} />
+                    })*/
