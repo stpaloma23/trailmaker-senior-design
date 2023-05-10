@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 import LargeArticleCard from "../components/article-components/LargeArticleCard";
-import SmallArticleCard from "../components/article-components/SmallArticleCard";
 import TrailTaskToComplete from "../components/my-task-components/TrailTaskToComplete";
 import welcomeData from "../images/data";
 import welcomePic from "../images/welcome.png";

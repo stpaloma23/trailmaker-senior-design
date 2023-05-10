@@ -1,4 +1,4 @@
-import React, {useMemo} from "react";
+import React from "react";
 import { useParams } from "react-router";
 import ArticleNextSteps from "../components/article-components/ArticleNextSteps";
 import Data from "../images/data";
@@ -39,11 +39,11 @@ function ArticlePage({app, userInformation, isLoggedIn}){
     // console.log(articleData)
 
     // using usememo from react library 
-    const date = useMemo(() => {
-        if(!articleData) return " ";
-        const parsedDate = new Date(articleData.publishedDate);
-        return parsedDate.toDateString();
-    }, [articleData]);
+    // const date = useMemo(() => {
+    //     if(!articleData) return " ";
+    //     const parsedDate = new Date(articleData.publishedDate);
+    //     return parsedDate.toDateString();
+    // }, [articleData]);
 
     let headerPhoto;
     if (id === "article-one") {

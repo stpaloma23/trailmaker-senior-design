@@ -4,6 +4,7 @@ import check from "../../images/check.png"
 
 function TrailTaskToComplete({ task, app, uid, section, displayDate}){
     console.log("in this bitch hoe");
+    const [showTask, setShowTask] = useState(true)
     const trStepRef = useRef(null);
     const userTaskCompleted = useCallback(async () => {
         // when the button is pressed, it removes the  task from the sections and adds it to the completed section
@@ -14,11 +15,11 @@ function TrailTaskToComplete({ task, app, uid, section, displayDate}){
                 updateDoc(docRef, {[section]:arrayRemove(String(userTask)), all:arrayRemove(String(userTask)), completed:arrayUnion(String(userTask))});;
                 const tasks = await getDoc(docRef);
                 console.log(tasks);
-
+                setShowTask(false)
             } catch (error) {
                 console.warn("error in task to complete", error);
             }
-    },[section, app, uid]);
+    },[section, app, uid, showTask]);
     let color;
     if (section === "all") {
         color = "purple";
@@ -38,9 +39,10 @@ function TrailTaskToComplete({ task, app, uid, section, displayDate}){
     if (section === "completed") {
         color = "black";
     }
+    console.log("show task", showTask);
 
     return (
-        
+        showTask && (
             <div className="task-to-complete">
                 <div className="next-step-text">
                     <p id="article-step" ref={trStepRef}>{task}</p>
@@ -51,7 +53,7 @@ function TrailTaskToComplete({ task, app, uid, section, displayDate}){
                     <div className="add-next-step trail-task-button" onClick={userTaskCompleted}> <img src={check} alt="check icon"/> </div>
                 </div>
             </div>
-        
+        )
     )
 }
 export default TrailTaskToComplete;

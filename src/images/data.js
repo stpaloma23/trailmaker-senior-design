@@ -2,7 +2,7 @@ export default [
     {
       "id": "article-one",
       "title": "Welcome to Trailmaker!",
-      "blurb": "Welcome to trailmaker! a website designed to help first generation andn low income college students make their trails to blaze through. Here are some tips to gain the most out of this resource",
+      "blurb": "Welcome to trailmaker! a website designed to help first generation and low income college students make their trails to blaze through. Here are some tips to gain the most out of this resource",
       "articleText": [
         {
           "type": "p",

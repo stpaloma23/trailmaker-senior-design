@@ -29,10 +29,10 @@ function NavBar({isLoggedIn, setIsLoggedIn, setUserInformation}){
                 <nav>
                     <a href="/highschool">High School</a>
                     <a href="/finances">Finances</a>
-                    <a href="/academics">Academic</a>
+                    <a href="/academics">Personal</a>
                     <a href="/career">Career</a>
                     <a href="/my-trail">My Trail</a>
-                    <a href="/">New Post</a>
+                    {/* <a href="/">New Post</a> */}
                     {(isLoggedIn &&<a href="/" onClick={()=>logout()}>Logout</a>) || (!isLoggedIn &&<a href="/login">Login</a>)}
                 </nav>
             </div>
