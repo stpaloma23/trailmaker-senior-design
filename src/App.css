@@ -324,6 +324,7 @@ footer {
   width: 100px;
   border: 1px black solid;
   border-radius:25px  ;
+  cursor: pointer;
   -webkit-border-radius:25px  ;
   -moz-border-radius:25px  ;
   -ms-border-radius:25px  ;
@@ -337,6 +338,7 @@ footer {
 }
 .thought-card{
   border-radius:25px;
+  cursor: pointer;
   -webkit-border-radius:25px;
   -moz-border-radius:25px;
   -ms-border-radius:25px;
@@ -599,4 +601,30 @@ footer {
   margin-right: 15px;
   padding-right: 15px;
   border-right: 1px solid black;
+}
+.thought-title-input {
+  height:30px;
+  width: 100%;
+  border-radius: 10px;
+  border: #929090 solid 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 15px;
+}
+textarea {
+  height:200px;
+  width: 100%;
+  border-radius: 10px;
+  border: #929090 solid 1px;
+  margin-bottom: 15px;
+}
+.though-post-buttons button {
+  margin-right: 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }

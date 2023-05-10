@@ -13,6 +13,7 @@ function MyTrail({isLoggedIn, app, userInformation}){
                 displayTask={true}
                 app={app}
                 userInformation={userInformation}
+                isLoggedIn={isLoggedIn}
              />
         </div>
     )
