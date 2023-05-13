@@ -14,7 +14,7 @@ function MyTrailHeader({selectedSection, setSelectedSection, userInformation}){
             <h3>Hey {userInformation.displayName} </h3>
             <ul>
                 <li className="trail-sidebar-content" onClick={() => handleNavClick('tasks')}>My Tasks</li>
-                <li className="trail-sidebar-content" onClick={() => handleNavClick('goals')}>My Goals</li>
+                {/* <li className="trail-sidebar-content" onClick={() => handleNavClick('goals')}>My Goals</li> */}
                 <li className="trail-sidebar-content" onClick={() => handleNavClick('thoughts')}>My Thoughts</li>
                 <li className="trail-sidebar-content" onClick={() => handleNavClick('calendar')}>My Calendar</li>
                 <li className="trail-sidebar-content" onClick={() => handleNavClick('settings')}>Settings</li>

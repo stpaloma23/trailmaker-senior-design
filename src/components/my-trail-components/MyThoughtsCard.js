@@ -85,9 +85,15 @@ function MyThoughtsCard({app, userInformation, isLoggedIn}) {
 
                     })
                 }
-                <ThoughtsCard/>
-                <ThoughtsCard/>
-                <ThoughtsCard/>
+                <ThoughtsCard
+                    title={"Colleges I'm Applying to "}
+                />
+                <ThoughtsCard
+                    title={"My FAFSA Check List"}
+                />
+                <ThoughtsCard
+                    title={"Internships to Apply To"}
+                />
             </div>
         </div>
     )

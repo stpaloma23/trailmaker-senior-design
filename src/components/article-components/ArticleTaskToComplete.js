@@ -53,7 +53,6 @@ function ArticleTaskToComplete({step,section, app, userInformation, isLoggedIn})
                 <p id="article-step" ref={arStepRef}>{step}</p>
             </div>
             <div className="next-step-other-info">
-                <p className="next-step-date">3/23/2023</p>
                 <p className={`type-of-task ${color}`}>{section}</p>
                 <button className="add-next-step" disabled={disabled} onClick={addStepToUserTasks}> {buttonText}</button>
             </div>
