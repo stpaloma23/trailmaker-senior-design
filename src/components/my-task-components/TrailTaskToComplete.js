@@ -19,7 +19,7 @@ function TrailTaskToComplete({ task, app, uid, section, displayDate}){
             } catch (error) {
                 console.warn("error in task to complete", error);
             }
-    },[section, app, uid, showTask]);
+    },[section, app, uid]);
     let color;
     if (section === "all") {
         color = "purple";

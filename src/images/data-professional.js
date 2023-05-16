@@ -1,4 +1,4 @@
-export default [
+const careerData =  [
     {
       "id": "career-one",
       "title": "Top 5 Career Tips for First Generation College Students",
@@ -565,3 +565,5 @@ export default [
       "section":"career",
     }
   ];
+
+  export default careerData;

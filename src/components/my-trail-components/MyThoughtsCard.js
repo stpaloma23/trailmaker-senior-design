@@ -2,7 +2,7 @@ import ThoughtsCard from "../ThoughtsCard";
 import plus from "../../images/plus.png"
 import Modal from 'react-modal';
 import { useState, useCallback, useRef, useEffect } from "react";
-import { getFirestore, doc, getDoc, addDoc, arrayUnion, setDoc, getDocs} from "firebase/firestore";
+import { getFirestore, doc, getDoc,  setDoc} from "firebase/firestore";
 function MyThoughtsCard({app, userInformation, isLoggedIn}) {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [userThoughts, setUserThoughts] = useState([]);
@@ -56,9 +56,7 @@ function MyThoughtsCard({app, userInformation, isLoggedIn}) {
         fetchThoughts();
     },[app,userInformation]);
 
-    console.log("userthoghts outside" , userThoughts);
-    
-
+    console.log("user thoughts outside" , userThoughts);
 
     return (
         <div className="my-trail-card">
@@ -80,8 +78,8 @@ function MyThoughtsCard({app, userInformation, isLoggedIn}) {
                 </Modal>
                 {
                     userThoughts.map((thought, i) => {
-                        <ThoughtsCard
-                            title={thought[0]} key={i}/>
+                        return (<ThoughtsCard
+                            title={thought[0]} key={i}/>)
 
                     })
                 }

@@ -1,4 +1,4 @@
-export default [
+const homeData =  [
     {
       "id": "article-one",
       "title": "Article One: First Fake Article",
@@ -212,3 +212,4 @@ export default [
       "section":"home",
     }
   ];
+export default homeData;

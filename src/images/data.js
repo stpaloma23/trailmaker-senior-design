@@ -1,4 +1,4 @@
-export default [
+const Data =  [
     {
       "id": "article-one",
       "title": "Welcome to Trailmaker!",
@@ -301,3 +301,4 @@ export default [
       "section":"finance",
     }
   ];
+export default Data;

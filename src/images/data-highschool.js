@@ -1,4 +1,4 @@
-export default [
+const highschoolData = [
     {
       "id": "highschool-one",
       "title": "AP Classes: Are They Worth It?      ",
@@ -755,3 +755,4 @@ export default [
       "section":"highschool",
     }
   ];
+export default highschoolData

@@ -27,7 +27,7 @@ function CreateUser({setIsLoggedIn, setUserInformation, isLoggedIn, app}){
                 completed:[],
                 allTasks:[],
             };
-            var userThoughts = {}
+            
             await setDoc(doc(db,"user-tasks", String(uid)), userTasks);
             // await setDoc(doc(db,"user-thoughts", String(uid)), userThoughts);
             console.log(db);

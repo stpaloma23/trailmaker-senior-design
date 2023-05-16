@@ -1,4 +1,4 @@
-export default [
+const academicData = [
     {
       "id": "academic-one",
       "title": "Article One: First Fake Article",
@@ -212,3 +212,4 @@ export default [
       "section":"academic",
     }
   ];
+export default academicData

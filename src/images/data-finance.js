@@ -1,4 +1,4 @@
-export default [
+const careerData =  [
     {
       "id": "finance-one",
       "title": "Paying for College 101: 10 Things you need to consider",
@@ -680,3 +680,4 @@ export default [
       "section":"finance",
     }
   ];
+  export default careerData;

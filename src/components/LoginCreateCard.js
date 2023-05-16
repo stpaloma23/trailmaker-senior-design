@@ -1,12 +1,11 @@
 
 import {useNavigate} from 'react-router-dom';
-import React, { useEffect, useCallback, useState } from "react";
+import React, { useEffect, useCallback } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import LoginForm from "./LoginForm";
 
 function LoginCreateCard({ isLoggedIn, setIsLoggedIn, setUserInformation }){
     const navigate = useNavigate();
-    const [errors, setErrors] = useState();
 
     const navigateToCreatePage = () => {
         navigate('/create-user');
@@ -35,9 +34,8 @@ function LoginCreateCard({ isLoggedIn, setIsLoggedIn, setUserInformation }){
                 const errorCode = errors.code;
                 const errorMessage = errors.message;
                 console.warn({ errors, errorCode, errorMessage})
-                setErrors(errorMessage);
             }); 
-    }, [setErrors, setIsLoggedIn, setUserInformation])
+    }, [setIsLoggedIn, setUserInformation])
 
     return(
         <div className="login-create-card-container">
